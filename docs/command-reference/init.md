@@ -9,9 +9,9 @@
 
 ## Options
 
-- `-f`, `--force` - 
-- `--no-scm` - 
-- `--no-dvc` - 
+- `-f`, `--force` - Overwrites existing Holium project.
+- `--no-scm` - Initiate Holium in directory that is not tracked by any SCM tool.
+- `--no-dvc` - Initiate Holium in directory that is not tracked by any DVC tool.
 
 ## Integration of code and data version control tools
 
