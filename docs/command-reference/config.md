@@ -31,5 +31,5 @@ It is also possible to set a common configuration options for all projects.
 
 ### core
 
-- `core.no_scm` - 
-- `core.no_dvc` - 
+- `core.no_scm` - Use Holium with no SCM tool. 
+- `core.no_dvc` - Use Holium with no DVC tool.
