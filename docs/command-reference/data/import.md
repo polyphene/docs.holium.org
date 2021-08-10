@@ -9,6 +9,7 @@ sidebar_position: 1
 
 TODO
 
+- *Maps* (in CBOR or JSON in particular) are *converted* into arrays. We use an order on key types which does NOT come with any guarantee. Alphabetical ordering of String keys for instance is not guaranteed.
 - import of CBOR maps
     - order of keys is not preserved
     - in fact, sorted with oreder of keys as [`serde_cbor::Value`s](https://docs.rs/serde_cbor/0.11.1/serde_cbor/enum.Value.html)
