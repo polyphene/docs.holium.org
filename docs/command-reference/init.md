@@ -1,3 +1,8 @@
+---
+sidebar_label: init
+sidebar_position: 1
+---
+
 # `init`
 
 ## Description

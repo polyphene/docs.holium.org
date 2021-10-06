@@ -1,3 +1,8 @@
+---
+sidebar_label: config
+sidebar_position: 2
+---
+
 # `config`
 
 ## Description
