@@ -1,17 +1,17 @@
 ---
 sidebar_label: run
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # `run`
 
 ## Description
 
-The run command executes a transformation by taking data as input.
+The run command executes pipelines in project by taking a specific data as input.
 
 ## Usage
 
-`holium run <transformation-cid> <data-cid>`
+`holium run <data-cid>`
 
 Data can be either specified in the CLI or coming from a portation.
 <!-- TODO how to integrate portation -->
@@ -20,4 +20,4 @@ Data can be either specified in the CLI or coming from a portation.
 
 The command will return either a code `0` (success) or `1` (error) for now.
 
-It will also produce a CID, referring to the generated data by the execution.
+It will also produce a list of CID, referring to the generated data by the execution.

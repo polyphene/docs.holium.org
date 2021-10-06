@@ -1,9 +1,9 @@
 ---
-sidebar_label: add
+sidebar_label: import
 sidebar_position: 1
 ---
 
-# `add`
+# `import`
 
 ## Description
 
