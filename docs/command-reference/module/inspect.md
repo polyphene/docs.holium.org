@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Description
 
-Command used to list all CIDs that are modules
+Command used to print metadata from a module.
 
 ### Usage
 
