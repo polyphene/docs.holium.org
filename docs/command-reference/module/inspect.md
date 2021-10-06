@@ -9,11 +9,11 @@ sidebar_position: 2
 
 Command used to print metadata from a module.
 
-### Usage
+## Usage
 
 `holium module inspect <module-CID>`
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).
 

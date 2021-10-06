@@ -9,11 +9,11 @@ sidebar_position: 3
 
 Command used to list all CIDs that are modules
 
-### Usage
+## Usage
 
 `holium module list`
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).
 

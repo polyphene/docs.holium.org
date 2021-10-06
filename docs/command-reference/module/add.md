@@ -14,13 +14,13 @@ to be a wasm bytecode compiled using one of the holium SDKs.
 
 `holium module add <module-bytecode-path>`
 
-#### Flags
+## Options
 
 | Flag                           | Description          | Optional |
 | -----------------------------  | -------------------- |-------------------- |
 | `--metadata`                   | Path to a valid metadata file representing our module  | true |
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).
 

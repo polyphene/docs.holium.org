@@ -9,10 +9,10 @@ sidebar_position: 4
 
 Command used to remove a given connector from a holium project.
 
-### Usage
+## Usage
 
 `holium module rm <connector-CID>`
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).

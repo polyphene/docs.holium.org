@@ -10,13 +10,13 @@ sidebar_position: 1
 Command used to create a new connector, linking some module transformation outputs to some module 
 transformation inputs.
 
-### Usage
+## Usage
 
 `holium connector add <parent_transformation_idx>:<connector_selector> <child_transformation_idx>:<connector_selector>`
 
 <!-- TODO properly specify ways to connect two transformations -->
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).
 

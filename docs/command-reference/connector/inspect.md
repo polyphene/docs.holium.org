@@ -10,11 +10,11 @@ sidebar_position: 2
 Command used to print information about a connector 
 <!-- TODO define how we want to access that info. Is an inspect required ? -->
 
-### Usage
+## Usage
 
 `holium connector inspect <connector-CID>`
 
-### Return
+## Return
 
 The command will return either a code `0` (success) or `1` (error).
 
