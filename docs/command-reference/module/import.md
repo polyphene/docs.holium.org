@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Description
 
-Command used to import a new holium module in a project. The bytecode specified for the module has
+Command used to import a new Holium module in a project. The bytecode specified for the module has
 to be a wasm bytecode compiled using one of the holium SDKs.
 
 ### Usage
