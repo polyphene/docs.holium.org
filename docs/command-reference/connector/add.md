@@ -7,8 +7,8 @@ sidebar_position: 1
 
 ## Description
 
-Command used to create a new connector, linking some module transformation outputs to some module 
-transformation inputs.
+Command used to create a new connection, linking a module input connector to another module 
+output connector.
 
 ## Usage
 
