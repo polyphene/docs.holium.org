@@ -7,7 +7,7 @@ sidebar_position: 4
 
 ## Description
 
-Command used to remove a given connector from a holium project.
+Command used to remove a given connector from a Holium project.
 
 ## Usage
 
