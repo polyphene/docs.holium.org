@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## Description
 
-Command used to list all CIDs that are connectors.
+Command used to list all connection' CIDs.
 
 ## Usage
 
