@@ -7,14 +7,12 @@ sidebar_position: 3
 
 ## Description
 
-Command used to list all CIDs that are connectors.
+Command used to list all CIDs that are connections.
 
 ## Usage
 
-`holium connector list`
+`holium connection list`
 
 ## Return
 
-The command will return either a code `0` (success) or `1` (error).
-
-It will also produce a list of CIDs, referring to the objects that are connectors.
+It will also produce a list of CIDs, referring to the objects that are connections.

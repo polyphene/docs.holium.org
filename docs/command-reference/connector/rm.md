@@ -7,12 +7,8 @@ sidebar_position: 4
 
 ## Description
 
-Command used to remove a given connector from a holium project.
+Command used to remove a given connection from a Holium project.
 
 ## Usage
 
-`holium module rm <connector-CID>`
-
-## Return
-
-The command will return either a code `0` (success) or `1` (error).
+`holium module rm <connection-CID>`

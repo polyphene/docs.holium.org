@@ -15,6 +15,4 @@ Command used to list all CIDs that are modules
 
 ## Return
 
-The command will return either a code `0` (success) or `1` (error).
-
-It will also produce a list of CIDs, referring to the objects that are modules.
+Returns all modules' CIDs.

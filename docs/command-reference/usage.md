@@ -11,7 +11,7 @@ sidebar_position: 1
 | ----------------------------- | -------- | 
 | Initialize project   | `holium init`       | 
 | Import modules (loop) | `holium module import`       | 
-| Connect modules (loop) | `holium connector add`       | 
+| Connect modules (loop) | `holium connection add`       | 
 | Import data (loop) | `holium data import`       | 
 | Run using data CID | `holium run`       |
 
