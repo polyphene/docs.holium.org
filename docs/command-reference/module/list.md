@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## Description
 
-Command used to list all CIDs that are modules
+Command used to list modules' CIDs.
 
 ## Usage
 

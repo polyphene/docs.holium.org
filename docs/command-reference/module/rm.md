@@ -7,8 +7,7 @@ sidebar_position: 4
 
 ## Description
 
-Command used to remove a given module from a Holium project. If the module was used in a connection an
-error will be raised when trying to run it.
+Command used to remove a given module from a Holium project.
 
 ## Usage
 
