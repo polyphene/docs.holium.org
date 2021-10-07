@@ -20,4 +20,4 @@ output connector.
 
 The command will return either a code `0` (success) or `1` (error).
 
-It will also produce a CID, referring to the connector.
+It will also produce a CID, referring to the new connector.
