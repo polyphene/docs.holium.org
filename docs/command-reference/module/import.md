@@ -23,4 +23,4 @@ to be a wasm bytecode compiled using one of the Holium SDKs.
 
 ## Return
 
-It will also produce a CID, referring to the imported module.
+It will produce a CID, referring to the imported module.

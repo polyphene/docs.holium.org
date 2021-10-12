@@ -18,4 +18,4 @@ transformation inputs.
 
 ## Return
 
-It will also produce a CID, referring to the new connection.
+It will produce a CID, referring to the new connection.

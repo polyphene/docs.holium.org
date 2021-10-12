@@ -3,7 +3,12 @@ sidebar_label: Usage scenario
 sidebar_position: 1
 ---
 
-# `Usage scenario`
+# Usage
+
+## General information
+
+Commands in our CLI will return either a code `0` (success) or `1` (error) for now.
+
 
 ## Run via data CID
 

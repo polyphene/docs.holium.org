@@ -18,6 +18,4 @@ Data can be either specified in the CLI or coming from a portation.
 
 ## Return
 
-The command will return either a code `0` (success) or `1` (error) for now.
-
-It will also produce a list of CID, referring to the generated data by the execution.
+It will produce a list of CID, referring to the generated data by the execution.

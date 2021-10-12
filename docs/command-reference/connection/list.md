@@ -15,4 +15,4 @@ Command used to list all connections' CIDs.
 
 ## Return
 
-It will also produce a list of CIDs, referring to the objects that are connections.
+It will produce a list of CIDs, referring to the objects that are connections.
