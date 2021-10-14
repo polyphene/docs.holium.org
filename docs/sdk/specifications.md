@@ -1,22 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Specifications
-
-## Glossary
-
-We are on a `host` running `guest` wasm bytecode on a given `runtime`.
-
-Compiled Wasm bytecode are called `module`.
-
-In each `module` we can find between 1..n `transformation wrapper`. A `transformation wrapper` is the
-equivalent of a developed `pure transformation` (a function).
-
-When instantiating a `module` in a runtime, access points to `transformation wrapper` are called 
-`entry point`.
-
-## Design
 
 `entry point` will have the same name as the exported `pure transformation` they will lead to.
 
