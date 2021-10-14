@@ -14,7 +14,7 @@ Here is an overview of a given execution:
 
 ![Sequence diagram](../../static/img/sdk/sequence_diagram.png)
 
-All **transformations** must have the same signature:
+All **wrapped transformations** must have the same signature:
 
 `fn (ret_ptr: u32, input_ptr: u32, input_len: u32) -> ()`
 
