@@ -20,8 +20,8 @@ All **wrapped transformations** must have the same signature:
 
 All pointers and lengths refer to pointers and lengths of data on the **linear memory** of our **guest**.
 
-`ret_ptr` contains data in a tuple of format `(u32, u32)` being the pointer and length of our return
-payload of HoliumCBOR.
+`ret_ptr` contains data in a tuple of format `(u32, u32)` being the pointer and length of HoliumCBOR 
+return payload.
 
 `input_ptr` and `input_len` are the pointer and length of the input payload in HoliumCBOR format that
-we will use for our transformation.
+should be used to run the transformation.
