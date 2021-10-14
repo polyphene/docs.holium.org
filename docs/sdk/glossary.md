@@ -6,7 +6,7 @@ sidebar_position: 1
 
 We are on a `host` running `guest` wasm bytecode on a given `runtime`.
 
-Compiled Wasm bytecode are called `module`.
+Compiled wasm bytecode are called `module`.
 
 In each `module` we can find between 1..n `transformation wrapper`. A `transformation wrapper` is the
 equivalent of a developed `pure transformation` (a function).

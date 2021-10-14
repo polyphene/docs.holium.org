@@ -9,7 +9,7 @@ sidebar_position: 2
 - Use `holium-rust-sdk` as dependencies
 - Use proc macro `#[holium_bindgen` on public functions and structures that have to be exported
 - Compile using `cargo build --target wasm32-unkown-unknwon --release`
-- Wasm bytecode can be found in `<crate_root>/target/wasm32-unkown-unknwon/release/<crate_name>.wasm`
+- wasm bytecode can be found in `<crate_root>/target/wasm32-unkown-unknwon/release/<crate_name>.wasm`
 
 ## How does it work
 
