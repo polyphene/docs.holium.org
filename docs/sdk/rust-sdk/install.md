@@ -2,6 +2,11 @@
 sidebar_position: 1
 ---
 
+The Rust SDK is the Rust implementation of the [SDK specifications](../specifications.md).
+
+It leverages [procedural macros](https://doc.rust-lang.org/reference/procedural-macros.html) to be embedded
+as seamlessly as possible in a codebase.
+
 # Install
 
 _Rust target_
