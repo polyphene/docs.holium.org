@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Usage
 
-## Get wasm bytecode
+## Build a module
 
 - Use `holium-rust-sdk` as dependencies
 - Use proc macro `#[holium_bindgen` on public functions and structures that have to be exported
