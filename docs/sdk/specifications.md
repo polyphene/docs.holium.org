@@ -6,8 +6,8 @@ sidebar_position: 2
 
 **entry points** will have the same name as the exported **pure transformation** they will lead to.
 
-When passing data from the **host** to the **guest** wasm is currently limited. To bypass that limit we 
-will directly interact with the **guest** **linear memory**. By using pointers and lengths we will be able
+When passing data from the **host** to the **guest**, Wasm is currently limited. To bypass that limit we 
+directly interact with the guest's **linear memory**. By using pointers and lengths we are able
 to read and write complex data from and to our **module**.
 
 Here is an overview of a given execution:
