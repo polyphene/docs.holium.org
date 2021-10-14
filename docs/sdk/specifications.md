@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Glossary
 
-We are on a `host` running `guest` wasm bytecode on a given `runtime`.
+We are on a `host` running `guest` Wasm bytecode on a given `runtime`.
 
 Compiled Wasm bytecode are called `module`.
 
