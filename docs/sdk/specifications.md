@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Specifications
 
-**entry points** have the same name as the exported **pure transformation** they lead to.
+**Entry points** have the same name as the exported **pure transformation** they lead to.
 
 When passing data from the **host** to the **guest**, Wasm is currently limited. To bypass that limit we 
 directly interact with the guest's **linear memory**. By using pointers and lengths we are able
