@@ -8,7 +8,7 @@ sidebar_position: 2
 
 - Use the `#[holium_bindgen]` procedural macro on every public functions and structures that should be exported.
 - Compile using `cargo build --target wasm32-unkown-unknwon --release`
-- wasm bytecode can be found in `<crate_root>/target/wasm32-unkown-unknwon/release/<crate_name>.wasm`
+- Wasm bytecode can be found in `<crate_root>/target/wasm32-unkown-unknwon/release/<crate_name>.wasm`
 
 ## How does it work
 

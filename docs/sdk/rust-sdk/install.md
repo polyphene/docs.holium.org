@@ -11,7 +11,7 @@ as seamlessly as possible in a codebase.
 
 _Rust target_
 
-- Add rust compilation target for `wasm32-unknown-unknwon`.
+- Add rust compilation target for `wasm32-unknown-unknown`.
 
 _Cargo file_
 
