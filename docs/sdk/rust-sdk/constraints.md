@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Constraints
+# Limitations
 
 <!-- TODO can be fixed, to see related ticket -->
 Some common Rust types are not implemented yet:
