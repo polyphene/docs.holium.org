@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # What is Holium
 
 Holium is an open source protocol dedicated to the management of data massively connected through atomic
