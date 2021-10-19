@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Design'
+sidebar_position: 3
+---
+
 # Design
 
 The design of Holium closely followed aforementioned principles to describe in a very expressive and modular way any
