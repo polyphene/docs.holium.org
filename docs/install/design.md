@@ -56,9 +56,9 @@ by [pure functions](https://en.wikipedia.org/wiki/Pure_function) executed in a W
 
 WebAssembly is an open standard designed and maintained by the [World Wide Web Consortium (W3C)](https://www.w3.org/).
 In the words of its creators, it is *a safe, portable, low-level code format designed for efficient execution and
-compact representation*.
+compact representation*.[^1]
 
-[^https://www.w3.org/TR/wasm-core-1/#introduction%E2%91%A2]: W3C
+[^1]: [Introduction of the WebAssembly Core Specification](https://www.w3.org/TR/wasm-core-1/#introduction%E2%91%A2), W3C.
 
 Looking at the evolution of serverless architectures, WebAssembly is a logical successor to containers, enabling to move
 focus from stack implementation to business logic, embracing the benefits of function-based designs.
