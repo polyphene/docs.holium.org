@@ -35,4 +35,4 @@ These design principles translate to and are complemented by **development princ
 - **Think big** – The best chances of designing a future-proof solution will only be met by, at relevant times, thinking
   big. Some primary design consideration *de facto* chronologically places Holium in the present and the future.
   Therefore, in situations of choice, too much effort should not be put on enforcing compatibility with obsolete
-  technologies, and guiding principles should always favor compatibility with Web3-native components and thinking big.
+  technologies, and guiding principles should always favor compatibility with Web3-native components.
