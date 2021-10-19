@@ -12,7 +12,7 @@ for many codebase to be usable. In that regard, one SDK should be developed per 
 to be usable in the Holium protocol. 
 
 The role of an Holium SDK is to adapt a codebase to run within the Holium protocol by following the 
-[specifications](./specifications.md). 
+[specifications](specifications.md). 
 
 At first the focus is most likely to be pointed on languages that currently support direct compilation 
 to Wasm (mostly statically typed languages). About dynamically typed languages some research are currently

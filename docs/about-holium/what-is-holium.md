@@ -1,4 +1,5 @@
 ---
+sidebar_label: 'What is Holium'
 sidebar_position: 1
 ---
 
