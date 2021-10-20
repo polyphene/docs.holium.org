@@ -116,7 +116,7 @@ type RecursiveDataEnvelope_Typed_v0 union {
 
 With these two first kinds, any data, either structured or complex, can equally be introduced in the Holium framework
 and included in virtually any dataset. In the process, data re-usability is maximized as any data, scalar or not, will
-always be represented in the exact same way and benefit from the exact content-based universal identifier, while
+consistently be represented in the exact same way and benefit from the exact content-based universal identifier, while
 recursive data only hold links and never copies of original data.
 
 #### Execution
