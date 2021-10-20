@@ -218,7 +218,7 @@ To be accurate, more than chains, pipelines are really Directed Acyclic Graphs (
 ## See the Pipeline_v0 structure for more details.
 type PipelineVertex_v0 {String:Link} representation map
 
-## Pipeline edges are of type PipelineEdge.
+## Pipeline edges are of type PipelineEdge_v0.
 ## See the Pipeline structure for more details.
 type PipelineEdge_v0 struct {
   tailIndex 	int
