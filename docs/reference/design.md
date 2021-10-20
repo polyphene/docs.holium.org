@@ -24,7 +24,8 @@ not figure in the scope of this architectural layer.
 
 ## Reference schema
 
-:::note info This document serves as the actual reference schema for all objects in the Holium framework. Indications
+:::note info 
+This document serves as the actual reference schema for all objects in the Holium framework. Indications
 related to testing and contributing can be found at the end of it.
 :::
 
