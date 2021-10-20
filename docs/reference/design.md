@@ -226,7 +226,7 @@ type PipelineEdge_v0 struct {
   connexion 	&Connexion_Typed_v0
 } representation tuple
 
-## The Pipeline structure describes topologies of Directed Acyclic Graphs (DAG)
+## The Pipeline_v0 structure describes topologies of Directed Acyclic Graphs (DAG)
 ## defined primarily by their edges.
 ## Firstly, in these DAGs, vertices represent transformations and can be conceived
 ## as containers which content may vary according to the context. They may be empty
