@@ -84,7 +84,7 @@ transformation designs are extremely modular, this logically leads to flexible d
 ## Description of pipelines
 
 As in Holium every data items are ultimately united by a common format, and this format is the only one used for input
-and output parameters of transformations, it becomes very handy to chain transformations. This, combined with the fact
+and output parameters of transformations, it becomes very convenient to chain transformations. This, combined with the fact
 that Holium CBOR allows extensive manipulation of values using indexes only, chaining transformations and creating
 pipelines of any complexity and size basically comes down to describing simple connections between indexes.
 
