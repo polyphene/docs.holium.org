@@ -277,9 +277,9 @@ type DryTransformation_v0 struct {
   handle        String
 } representation tuple
 
-## DryTransformation_Typed_v0 is the typed version of DryPipe for protocol v0.
-type DryPipe_Typed_v0 union {
-    | DryPipe_v0 "dt_0"
+## DryTransformation_Typed_v0 is the typed version of DryTransformation for protocol v0.
+type DryTransformation_Typed_v0 union {
+    | DryTransformation_v0"dt_0"
 } representation inline {
     discriminantKey "typedVersion"
 }
