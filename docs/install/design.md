@@ -60,7 +60,7 @@ compact representation*.[^1]
 
 [^1]: [Introduction of the WebAssembly Core Specification](https://www.w3.org/TR/wasm-core-1/#introduction%E2%91%A2), W3C.
 
-Looking at the evolution of serverless architectures, WebAssembly is a logical successor to containers, enabling to move
+Looking at the evolution of serverless architectures, WebAssembly is a logical successor to containers, enabling to shift
 focus from stack implementation to business logic, embracing the benefits of function-based designs.
 
 ![execution-environment-json](/img/docs/design/execution-environment-json.svg)
