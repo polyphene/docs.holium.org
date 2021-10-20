@@ -75,7 +75,7 @@ execute its logic and return the result.
 As mentioned in the previous section, input and output data, at the edges of the execution, are formatted with Holium
 CBOR and hold no semantic information. To allow transformation developers to still use their own internal semantics
 while not imposing it to pipeline designers and any other layer in the architecture, SDKs allow to easily translate
-input and output Holium CBOR parameters from to and to internal structures.
+input and output Holium CBOR parameters from and to internal structures.
 
 This is one of the core elements of the design of Holium: **pure functions, given some input parameters in Holium CBOR
 format, are executed in WebAssembly runtimes and return output data in Holium CBOR format**. As both data and
