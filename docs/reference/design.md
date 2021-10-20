@@ -134,7 +134,7 @@ First, a module bytecode is represented with a dedicated kind.
 ```ipldsch
 ## ModuleBytecode_v0 is the type of data storing Wasm module bytecode.
 ## At some point, the FlexibleByteLayout could be a better implementation choice.
-## Reference: https://github.com/ipld/specs/blob/master/data-structures/flexible-byte-layout.md
+## Reference: https://github.com/ipld/ipld/blob/master/specs/advanced-data-layouts/fbl/spec.md
 type ModuleBytecode_v0 bytes
 
 ## ModuleBytecodeEnvelope_v0 is an enveloped content pointing to ModuleBytecode_v0.
