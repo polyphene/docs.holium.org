@@ -29,7 +29,7 @@ have to know specific string keys: they only manipulate arrays and indexes.
 As an example, in Holium, a transformation responsible for performing a euclidean division would never require a fixed
 naming of its input parameters. At the protocol-level, it would never manipulate mapping
 like `{ "dividend": 1071, "divisor": 462 }`, but only an array containing data to be transformed: `[ 1071, 462 ]`.
-However, this array is later used, whatever the semantics, it will always stay the same array, with a unique identifier,
+However, this array is later used, whatever the semantics, it will consistently stay the same array, with a unique identifier,
 to which any contextual information (in this case, the keys `"dividend"` and `"divisor"`) can be attached at any moment.
 
 The second adjustment to the original CBOR specification is the introduction of linked data to represent any recursive
@@ -38,7 +38,7 @@ their own unique identifier, to which points any recursive structure through lin
 
 ![holium-data-fragmentation-without-links](/img/docs/design/holium-data-fragmentation-without-links.svg)
 
-In this example, three scalar values are represented on the left: the numbers `21`,  `462` and `1071`. Each one of their
+In this example, three scalar values are represented on the left: the numbers `21`,  `462` and `1071`. Each one of them
 resides in its own block, can be formatted as a proper Holium CBOR object, and has a unique identifier.
 
 On the right are shown representations of two recursive values: `[ 1071, 462 ]` and `[ [ 1071, 462 ], 21 ]`. When
@@ -60,7 +60,7 @@ compact representation*.[^1]
 
 [^1]: [Introduction of the WebAssembly Core Specification](https://www.w3.org/TR/wasm-core-1/#introduction%E2%91%A2), W3C.
 
-Looking at the evolution of serverless architectures, WebAssembly is a logical successor to containers, enabling to move
+Looking at the evolution of serverless architectures, WebAssembly is a logical successor to containers, enabling to shift
 focus from stack implementation to business logic, embracing the benefits of function-based designs.
 
 ![execution-environment-json](/img/docs/design/execution-environment-json.svg)
@@ -75,7 +75,7 @@ execute its logic and return the result.
 As mentioned in the previous section, input and output data, at the edges of the execution, are formatted with Holium
 CBOR and hold no semantic information. To allow transformation developers to still use their own internal semantics
 while not imposing it to pipeline designers and any other layer in the architecture, SDKs allow to easily translate
-input and output Holium CBOR parameters from to and to internal structures.
+input and output Holium CBOR parameters from and to internal structures.
 
 This is one of the core elements of the design of Holium: **pure functions, given some input parameters in Holium CBOR
 format, are executed in WebAssembly runtimes and return output data in Holium CBOR format**. As both data and
@@ -84,7 +84,7 @@ transformation designs are extremely modular, this logically leads to flexible d
 ## Description of pipelines
 
 As in Holium every data items are ultimately united by a common format, and this format is the only one used for input
-and output parameters of transformations, it becomes very handy to chain transformations. This, combined with the fact
+and output parameters of transformations, it becomes very convenient to chain transformations. This, combined with the fact
 that Holium CBOR allows extensive manipulation of values using indexes only, chaining transformations and creating
 pipelines of any complexity and size basically comes down to describing simple connections between indexes.
 
