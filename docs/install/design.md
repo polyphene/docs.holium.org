@@ -38,7 +38,7 @@ their own unique identifier, to which points any recursive structure through lin
 
 ![holium-data-fragmentation-without-links](/img/docs/design/holium-data-fragmentation-without-links.svg)
 
-In this example, three scalar values are represented on the left: the numbers `21`,  `462` and `1071`. Each one of their
+In this example, three scalar values are represented on the left: the numbers `21`,  `462` and `1071`. Each one of them
 resides in its own block, can be formatted as a proper Holium CBOR object, and has a unique identifier.
 
 On the right are shown representations of two recursive values: `[ 1071, 462 ]` and `[ [ 1071, 462 ], 21 ]`. When
