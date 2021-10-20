@@ -29,7 +29,7 @@ have to know specific string keys: they only manipulate arrays and indexes.
 As an example, in Holium, a transformation responsible for performing a euclidean division would never require a fixed
 naming of its input parameters. At the protocol-level, it would never manipulate mapping
 like `{ "dividend": 1071, "divisor": 462 }`, but only an array containing data to be transformed: `[ 1071, 462 ]`.
-However, this array is later used, whatever the semantics, it will always stay the same array, with a unique identifier,
+However, this array is later used, whatever the semantics, it will consistently stay the same array, with a unique identifier,
 to which any contextual information (in this case, the keys `"dividend"` and `"divisor"`) can be attached at any moment.
 
 The second adjustment to the original CBOR specification is the introduction of linked data to represent any recursive
