@@ -195,7 +195,7 @@ in [subsequent section](#selectors-and-connexions).
 ## Selector_v0, used in protocol v0, is a Copy of SelectorEnvelope.
 type Selector_v0 = SelectorEnvelope
 
-## The Connexion type is used to connect a tail selector, basically
+## The Connexion_v0 type is used to connect a tail selector, basically
 ## selecting pieces of a transformation output, to a head selector
 ## of same topology, selecting parts of a transformation input.
 type Connexion_v0 struct {
