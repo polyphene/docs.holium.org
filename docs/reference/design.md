@@ -214,7 +214,7 @@ type Connexion_Typed_v0 union {
 To be accurate, more than chains, pipelines are really Directed Acyclic Graphs (DAG) of transformations.
 
 ```ipldsch
-## Pipeline vertices are of type PipelineVertex.
+## Pipeline vertices are of type PipelineVertex_v0.
 ## See the Pipeline structure for more details.
 type PipelineVertex_v0 {String:Link} representation map
 
