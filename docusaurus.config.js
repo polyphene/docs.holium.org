@@ -1,3 +1,5 @@
+const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -93,6 +95,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
+          remarkPlugins: [simplePlantUML],
         },
         blog: {
           showReadingTime: true,
