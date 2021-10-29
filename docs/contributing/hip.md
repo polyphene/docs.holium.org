@@ -44,7 +44,7 @@ the HIP to the **review** status.
 
 **Accepted**
 
-The HIP becomes a final standard. A Final HIP exists in a state of finality and should only be
+The HIP becomes a final standard. An **accepted** HIP exists in a state of finality and should only be
 updated to correct errata and add non-normative clarifications.
 
 **Withdrawn**
