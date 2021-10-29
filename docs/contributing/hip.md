@@ -40,7 +40,7 @@ changes that were requested have been addressed by the author. The process for i
 developers to decide whether to encode an HIP into their clients is not part of the HIP process.
 
 If this period results in necessary normative changes (at a maintainer’s discretion), it will revert
-the HIP to **review**.
+the HIP to the **review** status.
 
 **Accepted**
 
