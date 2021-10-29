@@ -18,7 +18,7 @@ An HIP can go through 5 different phases:
 ## Draft
 
 The first formally tracked stage of an HIP in development. A Pull Request is opened on the HIP 
-repository by a person. Then, the HIP is merged by a maintainer  into the HIP repository.
+repository by any contributor. Then, the HIP is merged by a maintainer into the HIP repository.
 
 Maintainers are initially members of the Polyphene team, the circle of maintainers will be extended 
 later according to conditions that are still to be defined.
