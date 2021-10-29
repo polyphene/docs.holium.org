@@ -50,5 +50,5 @@ updated to correct errata and add non-normative clarifications.
 **Withdrawn**
 
 The HIP authors have withdrawn the proposed HIP, or the HIP in **draft** or **review** is inactive 
-for a period of 6 months or greater. This state has finality and the HIP can not be resurrected using
+for a period of 6 months or more. This state has finality and the HIP can not be resurrected using
 this HIP number. If the idea is pursued at later date it is considered a new proposal.
