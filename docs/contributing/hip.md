@@ -53,7 +53,7 @@ A HIP author marks a HIP as ready for and requesting peer review.
 This is the final review window for a HIP before moving to **accepted**. A maintainer will assign **last call**
 status at the request of a HIP author and set an end date, typically 14 days later.
 
-An HIP is moved to **accepted** when it has been in **last call** for at least 2 weeks and any technical 
+A HIP is moved to **accepted** when it has been in **last call** for at least 2 weeks and any technical 
 change that was requested has been addressed by the author. The process for implementation 
 developers to decide whether to integrate a HIP into their clients is not part of the HIP process.
 
