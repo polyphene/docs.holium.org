@@ -318,7 +318,6 @@ type Selector union {
 ## A selector tree with only "explore*"-type selectors and no Matcher selectors
 ## is valid; it will just generate a "covered" set of nodes and no "result" set.
 type Matcher struct {
-	onlyIf optional Condition # match is true based on position alone if this is not set.
 	label optional String # labels can be used to match multiple different structures in one selection.
 }
 
