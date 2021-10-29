@@ -13,7 +13,25 @@ opinions.
 
 A HIP can go through 5 different phases:
 
-![HIP States](/img/hip/states.png)
+```plantuml
+hide empty description
+
+state "HIP Process" as HipProcess {
+  
+  state Draft #aliceblue;line:blue
+  state Accepted #palegreen;line:green;line.bold
+  state Withdrawn #pink;line:red;line.bold
+  state "Last Call" as LastCall
+  
+  Draft -> Review
+  Review -> LastCall
+  LastCall -> Review
+  LastCall -> Accepted
+  
+  Review --> Withdrawn
+  LastCall --> Withdrawn
+}
+```
 
 **Draft**
 
