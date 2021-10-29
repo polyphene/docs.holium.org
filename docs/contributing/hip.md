@@ -15,7 +15,7 @@ An HIP can go through 5 different phases:
 
 ![HIP States](/img/hip/states.png)
 
-**Draft**
+## Draft
 
 The first formally tracked stage of an HIP in development. A Pull Request is opened on the HIP 
 repository by a person. Then, the HIP is merged by a maintainer  into the HIP repository.
