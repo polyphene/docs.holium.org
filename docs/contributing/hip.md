@@ -23,7 +23,7 @@ repository by any contributor. Then, the HIP is merged by a maintainer into the 
 Maintainers are initially members of the Polyphene team. The circle of maintainers will be extended 
 later according to conditions that are still to be defined.
 
-HIP should be written in Markdown format and a template should be followed. The template can be found
+A HIP should be written in Markdown format and a template should be followed. The template can be found
 on the [HIP repository](https://github.com/polyphene/HIPs).
 
 **Review**
