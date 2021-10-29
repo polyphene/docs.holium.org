@@ -33,40 +33,40 @@ state "HIP Process" as HipProcess {
 }
 ```
 
-**Draft**
+## Draft
 
 The first formally tracked stage of a HIP in development. A Pull Request is opened on the HIP 
-repository by a person. Then, the HIP is merged by a maintainer  into the HIP repository.
+repository by any contributor. Then, the HIP is merged by a maintainer into the HIP repository.
 
-Maintainers are initially members of the Polyphene team, the circle of maintainers will be extended 
+Maintainers are initially members of the Polyphene team. The circle of maintainers will be extended 
 later according to conditions that are still to be defined.
 
-HIP should be written in Markdown format and a template should be followed. The template can be found
-on the [HIP repository](https://github.com/polyphene/HIPs).
+A HIP should be written in Markdown format and a template should be followed. The template can be found
+on the [HIP GitHub repository](https://github.com/polyphene/HIPs).
 
 **Review**
 
-A HIP Author marks a HIP as ready for and requesting Peer Review. 
+A HIP author marks a HIP as ready for and requesting peer review. 
 
 **Last call**
 
 This is the final review window for a HIP before moving to **accepted**. A maintainer will assign **last call**
 status at the request of a HIP author and set an end date, typically 14 days later.
 
-A HIP is moved to **accepted** when it has been in **last call** for at least 2 weeks and any technical 
-changes that were requested have been addressed by the author. The process for implementation 
-developers to decide whether to encode a HIP into their clients is not part of the HIP process.
+An HIP is moved to **accepted** when it has been in **last call** for at least 2 weeks and any technical 
+change that was requested has been addressed by the author. The process for implementation 
+developers to decide whether to integrate a HIP into their clients is not part of the HIP process.
 
 If this period results in necessary normative changes (at a maintainer’s discretion), it will revert
-the HIP to **review**.
+the HIP to the **review** status.
 
 **Accepted**
 
-The HIP becomes a final standard. A Final HIP exists in a state of finality and should only be
+The HIP becomes a final standard. An **accepted** HIP exists in a state of finality and should only be
 updated to correct errata and add non-normative clarifications.
 
 **Withdrawn**
 
-The HIP Author(s) have withdrawn the proposed HIP or the HIP in **draft** or **review** is inactive 
-for a period of 6 months or greater. This state has finality and the HIP can not be resurrected using
-this HIP number. If the idea is pursued at later date it is considered a new proposal.
+The HIP authors have withdrawn the proposed HIP, or the HIP in **draft** or **review** is inactive 
+for a period of 6 months or more. This state has finality and the HIP can not be resurrected using
+a similar HIP number. If the idea is continued at a later date, it is considered a new proposal.
