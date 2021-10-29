@@ -24,7 +24,7 @@ Maintainers are initially members of the Polyphene team. The circle of maintaine
 later according to conditions that are still to be defined.
 
 A HIP should be written in Markdown format and a template should be followed. The template can be found
-on the [HIP repository](https://github.com/polyphene/HIPs).
+on the [HIP GitHub repository](https://github.com/polyphene/HIPs).
 
 **Review**
 
