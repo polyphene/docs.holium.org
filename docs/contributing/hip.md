@@ -28,7 +28,7 @@ on the [HIP GitHub repository](https://github.com/polyphene/HIPs).
 
 **Review**
 
-An HIP Author marks an HIP as ready for and requesting Peer Review. 
+A HIP author marks an HIP as ready for and requesting peer review. 
 
 **Last call**
 
