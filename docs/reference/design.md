@@ -172,8 +172,9 @@ type Execution_v0 struct {
 ## Execution_Typed_v0 is the typed version of Execution for protocol v0.
 type Execution_Typed_v0 union {
     | Execution_v0 "ex_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -206,8 +207,9 @@ type Connexion_v0 struct {
 ## Connexion_Typed_v0 is the typed version of Connexion for protocol v0.
 type Connexion_Typed_v0 union {
     | Connexion_v0 "cx_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -248,8 +250,9 @@ type Pipeline_v0 struct {
 ## Pipeline_Typed_v0 is the typed version of Pipeline for protocol v0.
 type Pipeline_Typed_v0 union {
     | Pipeline_v0 "pl_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -280,8 +283,9 @@ type DryTransformation_v0 struct {
 ## DryTransformation_Typed_v0 is the typed version of DryTransformation for protocol v0.
 type DryTransformation_Typed_v0 union {
     | DryTransformation_v0 "dt_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
