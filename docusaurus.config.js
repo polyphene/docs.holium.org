@@ -18,8 +18,8 @@ module.exports = {
     navbar: {
       title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Holium logo',
+        src: 'img/logo.png',
       },
       items: [
         {
