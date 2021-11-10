@@ -172,8 +172,9 @@ type Execution_v0 struct {
 ## Execution_Typed_v0 is the typed version of Execution for protocol v0.
 type Execution_Typed_v0 union {
     | Execution_v0 "ex_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -184,30 +185,31 @@ basically connects each execution as an intermediary stage of a complete transfo
 one describing shapes of pipelines.
 
 As introduced in the [design overview](../about-holium/design.md), chaining transformations basically comes down to the
-connexion of indexes. As, in Holium, the input parameter of a transformation is a single list structure, holding nested
+connection of indexes. As, in Holium, the input parameter of a transformation is a single list structure, holding nested
 lists and/or scalars, each input element can be precisely identified with a set of indices. This is the purpose of *
 selectors*: to target precise elements inside input and output parameters. To connect a transformation to others and
 form a pipeline, one needs to connect each element of its input parameter to elements of output parameters coming from its
-preceding transformations, through *connexions*, introduced here and described in more detail
-in [subsequent section](#selectors-and-connexions).
+preceding transformations, through *connections*, introduced here and described in more detail
+in [subsequent section](#selectors-and-connections).
 
 ```ipldsch
 ## Selector_v0, used in protocol v0, is a Copy of SelectorEnvelope.
 type Selector_v0 = SelectorEnvelope
 
-## The Connexion_v0 type is used to connect a tail selector, basically
+## The Connection_v0 type is used to connect a tail selector, basically
 ## selecting pieces of a transformation output, to a head selector
 ## of same topology, selecting parts of a transformation input.
-type Connexion_v0 struct {
+type Connection_v0 struct {
   tailSelector 	&Selector_v0
   headSelector 	&Selector_v0
 } representation tuple
 
-## Connexion_Typed_v0 is the typed version of Connexion for protocol v0.
-type Connexion_Typed_v0 union {
-    | Connexion_v0 "cx_0"
-} representation inline {
+## Connection_Typed_v0 is the typed version of Connection for protocol v0.
+type Connection_Typed_v0 union {
+    | Connection_v0 "cx_0"
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -223,7 +225,7 @@ type PipelineVertex_v0 {String:Link} representation map
 type PipelineEdge_v0 struct {
   tailIndex 	int
   headIndex 	int
-  connexion 	&Connexion_Typed_v0
+  connection 	&Connection_Typed_v0
 } representation tuple
 
 ## The Pipeline_v0 structure describes topologies of Directed Acyclic Graphs (DAG)
@@ -248,8 +250,9 @@ type Pipeline_v0 struct {
 ## Pipeline_Typed_v0 is the typed version of Pipeline for protocol v0.
 type Pipeline_Typed_v0 union {
     | Pipeline_v0 "pl_0"
-} representation inline {
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
@@ -279,13 +282,14 @@ type DryTransformation_v0 struct {
 
 ## DryTransformation_Typed_v0 is the typed version of DryTransformation for protocol v0.
 type DryTransformation_Typed_v0 union {
-    | DryTransformation_v0"dt_0"
-} representation inline {
+    | DryTransformation_v0 "dt_0"
+} representation envelope {
     discriminantKey "typedVersion"
+    contentKey "content"
 }
 ```
 
-##### Selectors and connexions {#selectors-and-connexions}
+##### Selectors and connections {#selectors-and-connections}
 
 ```ipldsch
 ## Selectors used in Holium are a subset of IPLD Selectors.
@@ -318,7 +322,6 @@ type Selector union {
 ## A selector tree with only "explore*"-type selectors and no Matcher selectors
 ## is valid; it will just generate a "covered" set of nodes and no "result" set.
 type Matcher struct {
-	onlyIf optional Condition # match is true based on position alone if this is not set.
 	label optional String # labels can be used to match multiple different structures in one selection.
 }
 
@@ -369,7 +372,7 @@ Here is the index of short kind descriptors :
 | Module Bytecode envelope | `mbe`            |
 | Execution                | `ex`             |
 | Dry Transformation       | `dt`             |
-| Connexion                | `cx`             |
+| Connection                | `cx`             |
 | Pipeline                 | `pl`             |
 
 When defining schemas for a new version of the protocol, each complex schema has a _versionized_ version. If a
