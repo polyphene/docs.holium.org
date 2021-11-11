@@ -9,7 +9,11 @@ In this tutorial, we will go through the creation of an Holium project that is t
 and deployed — you can check out the generated project from the tutorial [here](https://github.com/polyphene/getting-started).
 
 This tutorial is geared at first-time users who want detailed instructions on how to go from zero to
-a deployed Holium project.
+a deployed Holium project. As we aim to get use to all facets of the Holium CLI we chose a simple use case.
+
+The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represents numbers on
+avocado sales in the United States. The goal of our transformation pipeline is to create a data
+pipeline to get insight of which avocado type is most sold in a selected year.
 
 To be able to follow this tutorial you will first need to install Rust on your machine. They have various
 ways of installing it on your machine.
