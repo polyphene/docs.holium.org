@@ -28,7 +28,7 @@ new object created: selected_year
 Make sure to run the sub-command for all **data sources** available so that all assets are available in the
 Holium project.
 
-Once is is done we are able to list all of our **data sources** with the sub-command [`holium source ls`](TODO_LINK_TO_LIST_SOURCES):
+Once it is done we are able to list all of our **data sources** with the sub-command `holium source list`:
 
 ```shell
 $ holium source list
