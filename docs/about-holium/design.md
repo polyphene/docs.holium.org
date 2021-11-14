@@ -15,7 +15,7 @@ dedicated to explain how it works in three simple incremental steps:
 
 ## Representation of data
 
-Any data in the Holium framework is serialized with one format: *Holium CBOR*. It is based on
+Any data in the Holium framework is serialized with one format: *HoliumCBOR*. It is based on
 the [Concise Binary Object Representation (CBOR)](https://cbor.io/), a standard supported by
 the [Internet Engineering Task Force (IETF)](https://www.ietf.org/) and based on the popular JSON format. It requires no
 schema and embraces a concise typed encoding system. Therefore, **anything that can be represented in a JSON file can be
@@ -44,10 +44,10 @@ their own unique identifier, to which points any recursive structure through lin
 ![holium-data-fragmentation-without-links](/img/docs/design/holium-data-fragmentation-without-links.svg)
 
 In this example, three scalar values are represented on the left: the numbers `21`,  `462` and `1071`. Each one of them
-resides in its own block, can be formatted as a proper Holium CBOR object, and has a unique identifier.
+resides in its own block, can be formatted as a proper HoliumCBOR object, and has a unique identifier.
 
 On the right are shown representations of two recursive values: `[ 1071, 462 ]` and `[ [ 1071, 462 ], 21 ]`. When
-formatted with Holium CBOR, such arrays do not hold scalar values directly, but identifiers of these values instead.
+formatted with HoliumCBOR, such arrays do not hold scalar values directly, but identifiers of these values instead.
 
 ![holium-data-fragmentation-with-links](/img/docs/design/holium-data-fragmentation-with-links.svg)
 
@@ -80,17 +80,17 @@ execute its logic and return the result.
 As mentioned in the previous section, input and output data, at the edges of the execution, are formatted with Holium
 CBOR and hold no semantic information. To allow transformation developers to still use their own internal semantics
 while not imposing it to pipeline designers and any other layer in the architecture, SDKs allow to easily translate
-input and output Holium CBOR parameters from and to internal structures.
+input and output HoliumCBOR parameters from and to internal structures.
 
-This is one of the core elements of the design of Holium: **pure functions, given some input parameters in Holium CBOR
-format, are executed in WebAssembly runtimes and return output data in Holium CBOR format**. As both data and
+This is one of the core elements of the design of Holium: **pure functions, given some input parameters in HoliumCBOR
+format, are executed in WebAssembly runtimes and return output data in HoliumCBOR format**. As both data and
 transformation designs are extremely modular, this logically leads to flexible definitions of pipeline structures.
 
 ## Description of pipelines
 
 As in Holium every data items are ultimately united by a common format, and this format is the only one used for input
 and output parameters of transformations, it becomes very convenient to chain transformations. This, combined with the fact
-that Holium CBOR allows extensive manipulation of values using indexes only, chaining transformations and creating
+that HoliumCBOR allows extensive manipulation of values using indexes only, chaining transformations and creating
 pipelines of any complexity and size basically comes down to describing simple connections between indexes.
 
 ![holium-cbor-connections](/img/docs/design/holium-cbor-connections.svg)
@@ -115,7 +115,7 @@ their readiness for modularity and scalability, and offering them unique identif
 To conclude this introduction to the core design of Holium, we may synthesize its main characteristics with the three
 same steps:
 
-1. The Holium CBOR format allows to represent any data (scalar and recursive, structured and complex) in a unified way.
+1. The HoliumCBOR format allows to represent any data (scalar and recursive, structured and complex) in a unified way.
    It frees data from any semantic lock at the transformation layer, fosters its re-usability by atomizing it, and
    provides any item of data with a unique identifier.
 2. Transformations are pure functions run inside a WebAssembly environment that only ingests and digests data in Holium

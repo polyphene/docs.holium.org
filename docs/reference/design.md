@@ -48,7 +48,7 @@ put on the three important kinds that enable the representation of transformatio
 model also supports the description of other objects (dry/data-free pipeline structures, metadata,...) specified
 afterwards.
 
-#### Data
+### Data
 
 The first kinds to be studied are the ones in charge of data and datasets themselves. As covered in
 the [design introduction](../about-holium/design.md), scalar values are stored as they are while recursive structures
@@ -119,7 +119,7 @@ and included in virtually any dataset. In the process, data re-usability is maxi
 consistently be represented in the exact same way and benefit from the exact content-based universal identifier, while
 recursive data only hold links and never copies of initial data.
 
-#### Execution
+### Execution
 
 The second important kind is the one in charge of describing the result of the execution of a transformation. This part
 of the architecture has also been introduced in the [design introduction](../about-holium/design.md) and, as a reminder,
@@ -178,7 +178,7 @@ type Execution_Typed_v0 union {
 }
 ```
 
-#### Pipelines
+### Pipelines
 
 To connect transformed datasets to all source datasets that they originate from, a last kind is necessary, which
 basically connects each execution as an intermediary stage of a complete transformation process. This last kind is the
@@ -267,9 +267,9 @@ for Dry Transformations,…), arranged in alphabetical order.
 To ensure determinism of their representations, additional rules based on a simple lexical ordering are explained in
 a [subsequent section](#pipeline-dag-lexical-order).
 
-#### Other kinds
+### Other kinds
 
-##### Dry transformation
+#### Dry transformation
 
 ```ipldsch
 ## DryTransformation_v0 is a kind specifying a module bytecode and a handle, that
@@ -289,7 +289,7 @@ type DryTransformation_Typed_v0 union {
 }
 ```
 
-##### Selectors and connections {#selectors-and-connections}
+#### Selectors and connections {#selectors-and-connections}
 
 ```ipldsch
 ## Selectors used in Holium are a subset of IPLD Selectors.
@@ -351,12 +351,15 @@ type ExploreUnion [Selector]
 ```
 
 :::caution
-**Work in progress.** Additional specifications should be expected in order to enforce determinism of these representations. 🚧
+
+Additional specifications should be expected in order to enforce determinism of these representations.
+Work in progress. 🚧
+
 :::
 
-### Additional considerations
+## Additional considerations
 
-#### Versioning strategy {#versioning}
+### Versioning strategy {#versioning}
 
 All complex schemas in the framework are versioned at the protocol level.
 
@@ -395,19 +398,22 @@ type Execution_Typed_v1 union {
 For more information on versioning strategies, have a look at
 the [official documentation](https://specs.ipld.io/schemas/migration.html).
 
-#### Lexical ordering of pipeline vertices {#pipeline-dag-lexical-order}
+### Lexical ordering of pipeline vertices {#pipeline-dag-lexical-order}
 
 :::caution
-**Work in progress. 🚧**
+
+Work in progress. 🚧
+
 :::
 
 ## Contributing
 
 ### Holium Improvement Proposal (HIP)
 
-:::caution
-**Work in progress. 🚧**
-:::
+These open specifications are constantly discussed and improved by the community,
+following a process made of proposals known as HIPs.
+
+If you would like to contribute, check the [dedicated guidelines](../contributing/hip.md).
 
 ### Validation
 
@@ -416,5 +422,5 @@ file: `npx ipld-schema validate ./holium-schema.md`.
 
 ### Resources
 
-More information on IPLD [website](https://ipld.io/), [documentation](https://docs.ipld.io/)
+Find more information on IPLD [website](https://ipld.io/), [documentation](https://docs.ipld.io/)
 and [specifications](https://specs.ipld.io/).
