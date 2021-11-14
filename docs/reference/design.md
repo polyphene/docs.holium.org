@@ -413,7 +413,7 @@ Work in progress. 🚧
 These open specifications are constantly discussed and improved by the community,
 following a process made of proposals known as HIPs.
 
-If you would like to contribute, check the [dedicated guidelines](../contributing/hip.md).
+If you would like to contribute, check the [dedicated guidelines](../contributing#hip.md).
 
 ### Validation
 
