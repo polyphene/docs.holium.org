@@ -23,6 +23,10 @@ module.exports = {
       },
       items: [
         {
+          type: 'search',
+          position: 'left',
+        },
+        {
           href: 'https://discord.gg/A3t5ZFSbCG/',
           label: 'Discord',
           position: 'right',
@@ -74,6 +78,14 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    algolia: {
+      // If Algolia did not provide you any appId, use 'BH4D9OD16A'
+      appId: 'YOUR_APP_ID',
+      // Public API key: it is safe to commit it
+      apiKey: 'YOUR_SEARCH_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+      contextualSearch: true,
     },
   },
   presets: [
