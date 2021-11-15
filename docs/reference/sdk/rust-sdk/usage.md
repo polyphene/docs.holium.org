@@ -10,7 +10,7 @@ sidebar_position: 2
 - Compile using `cargo build --target wasm32-unkown-unknwon --release`
 - Wasm bytecode can be found in `<crate_root>/target/wasm32-unkown-unknwon/release/<crate_name>.wasm`
 
-## How does it work
+## How does it work?
 
 - Adds `Serialize` & `Deserialize` derive code for exported structure
 - Implements `GenerateNode` trait to all exported structures
