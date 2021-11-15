@@ -13,7 +13,7 @@ a deployed Holium project. As we aim to get use to all facets of the Holium CLI 
 
 The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represents numbers on
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
-pipeline to get insight of which avocado type is most sold in a selected year.
+pipeline to get numbers of avocado type sales based on a given year.
 
 To be able to follow this tutorial you will first need to install Rust on your machine. They have various
 ways of installing it on your machine.
@@ -30,7 +30,7 @@ $ cargo install holium-cli
    Installed package `holium-cli v1.0.0-alpha`
 ```
 
-Then to procede in the tutorial we will have the need of two version control tools. 
+Then to proceed in the tutorial we will have the need of two version control tools. 
 
 The first one is [Git](https://git-scm.com/). It will prove useful to version our Holium project and the different pipeline
 we build in it. You can find about installation procedure on [their dedicated page](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git).

@@ -21,7 +21,7 @@ Initialized DVC repository.
 You can now commit the changes to git.
 ```
 
-Then, we need to initialize a new Holium project on our file system with the command provisionned by
+Then, we need to initialize a new Holium project on our file system with the command provisioned by
 the CLI.
 
 ```shell

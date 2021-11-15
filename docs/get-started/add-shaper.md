@@ -1,25 +1,50 @@
 ---
-sidebar_label: 'Add shaper'
+sidebar_label: 'Add a shaper'
 sidebar_position: 5
 ---
 
 # Add shaper
 
-**Shapers** are elements that allows to render data in a desired format. Currently, the supported format
-are JSON, CBOR and binary files. They can be placed anywhere in our pipeline DAG.
+**Shapers** are nodes that are usually uniquely connected as head nodes, meaning that they receive 
+data inputs but will output no data to another node. Developers can define the structure of output 
+data when creating the source node.
 
-For our project we will use one shaper to export data. The shaper we will use can be found in the [tutorial
-repository](TODO_LINK_TO_TUTO_REPO).
+We will connect it to our **transformation** in the future.
 
-To add a new **shaper** to our project we can use the sub-command [`holium shaper add`](TODO_LINK_TO_SHAPER_ADD):
+To create a new **shaper** to our project we can use the sub-command `holium shaper create`:
 
 ```shell
-$ holium shaper add
-
-TODO
+$ holium shaper create sales_results --json-schema '{\"type\":\"array\", \"prefixItems\":[{\"type\":\"array\", \"items\": {\"type\":\"array\", \"prefixItems\": [{\"type\": \"string\"}, {\"type\": \"number\"}]}}]}'
+new object created: sales_results
 ```
 
-With this last object added we have all objects necessary for us to build our pipeline. To build the 
-pipeline the next step is to connect all previously elements together.
+Once it is done we are able to list all of our **shapers** with the sub-command `holium shaper list`:
+
+```shell
+$ holium shaper list
+┌───────────────┬──────────────────────────────┐                  
+│ NAME          │ JSON Schema                  │
+├───────────────┼──────────────────────────────┤
+│ sales_results │ {                            │
+│               │   "type": "array",           │
+│               │   "prefixItems": [           │
+│               │     {                        │
+│               │       "type": "array",       │
+│               │       "items": {             │
+│               │         "type": "array",     │
+│               │         "prefixItems": [     │
+│               │           {                  │
+│               │             "type": "string" │
+│               │           },                 │
+│               │           {                  │
+│               │             "type": "number" │
+│               │           }                  │
+│               │         ]                    │
+│               │    ...                       │
+└───────────────┴──────────────────────────────┘
+```
+
+With this last object created we have all objects necessary for us to build our pipeline. To finalize the 
+pipeline build the final step is to connect all previously elements together.
 
 

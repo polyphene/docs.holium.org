@@ -5,39 +5,90 @@ sidebar_position: 5
 
 # Connect objects
 
-In the previous steps of the tutorial we imported all desired objects that had a role to play in our 
-pipeline. To build our pipeline and make it possible to run we now need to connect all those objects
-together to define the DAG (Directed Acyclic Graph) that will represent our pipeline.
+In the previous steps of the tutorial we created all desired nodes that had a role to play in our 
+pipeline DAG. To finalize the build of our pipeline DAG and make it run we now need to connect all 
+those nodes.
 
-We will start by connecting our data sources to the modules. 
+The **connections** model for Holium is based on [IPLD selectors](http://ipld.io.ipns.localhost:48084/specs/selectors/).
+Nonetheless, they are adapted in a subset to fit our specification. More to read in our [dedicated
+section](http://localhost:3000/reference/design#selectors-and-connections).
 
-To connect objects in our pipeline the CLi has a dedicated sub-command [`holium connexion add`](TODO_LINK_TO_CONNEXION_ADD).
+We will start by connecting our **data sources** to the **transformation**. 
 
-Let's create our first connexions:
+To connect objects in our pipeline the CLi has a dedicated sub-command `holium connection create`.
 
-TODO_CONNECT_ALL_DATA_SOURCES
+Let's create our first connexions, one to send avocado sales data to our **transformation** and one to
+send year choice to the **transformation**:
+
 ```shell
-$ holium connexion add
+$ holium connection create --tail-type source --tail-name avocado_sales --tail-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' 
+new object created: source:avocado_sales→transformation:avocado_operations
 
-TODO
+$ holium connection create --tail-type source --tail-name selected_year --tail-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{\"i\": {\"i\": 1, \">\": {\".\": {}}}}' 
+new object created: source:selected_year→transformation:avocado_operations
 ```
 
-Now that our data sources are connected lets connect all the modules together:
+Before moving forward to the connection between our **transformation** and our **shaper** let's print
+the list of connections we just created. To do so we can leverage the sub-command `holium connection list`:
 
-TODO_CONNECT_ALL_MODULES
 ```shell
-$ holium connexion add
-
-TODO
+$ holium connection list
+┌────────────────────────────────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
+│ ID                                                     │ TAIL SELECTOR (JSON Schema) │ HEAD SELECTOR (JSON Schema) │
+├────────────────────────────────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
+│ source:avocado_sales→transformation:avocado_operations │ {                           │ {                           │
+│                                                        │   "i": {                    │   "i": {                    │
+│                                                        │     "i": 0,                 │     "i": 0,                 │
+│                                                        │     ">": {                  │     ">": {                  │
+│                                                        │       ".": {}               │       ".": {}               │
+│                                                        │     }                       │     }                       │
+│                                                        │   }                         │   }                         │
+│                                                        │ }                           │ }                           │
+├────────────────────────────────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
+│ source:selected_year→transformation:avocado_operations │ {                           │ {                           │
+│                                                        │   "i": {                    │   "i": {                    │
+│                                                        │     "i": 0,                 │     "i": 1,                 │
+│                                                        │     ">": {                  │     ">": {                  │
+│                                                        │       ".": {}               │       ".": {}               │
+│                                                        │     }                       │     }                       │
+│                                                        │   }                         │   }                         │
+│                                                        │ }                           │ }                           │
+└────────────────────────────────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
 ```
 
-And finally let's connect the module to our shaper:
+Finally, we will create the last **connection** linking our **transformation** and our **shaper**:
 
-TODO_CONNECT_ALL_SHAPER
 ```shell
-$ holium connexion add
+$ holium connection create --tail-type transformation --tail-name avocado_operations --tail-selector '{\".\": {}}' --head-type shaper --head-name sales_results --head-selector '{\".\": {}}'
+new object created: transformation:avocado_operations→shaper:sales_results
 
-TODO
+$ holium connection list
+┌────────────────────────────────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
+│ ID                                                     │ TAIL SELECTOR (JSON Schema) │ HEAD SELECTOR (JSON Schema) │
+├────────────────────────────────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
+│ source:avocado_sales→transformation:avocado_operations │ {                           │ {                           │
+│                                                        │   "i": {                    │   "i": {                    │
+│                                                        │     "i": 0,                 │     "i": 0,                 │
+│                                                        │     ">": {                  │     ">": {                  │
+│                                                        │       ".": {}               │       ".": {}               │
+│                                                        │     }                       │     }                       │
+│                                                        │   }                         │   }                         │
+│                                                        │ }                           │ }                           │
+├────────────────────────────────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
+│ source:selected_year→transformation:avocado_operations │ {                           │ {                           │
+│                                                        │   "i": {                    │   "i": {                    │
+│                                                        │     "i": 0,                 │     "i": 1,                 │
+│                                                        │     ">": {                  │     ">": {                  │
+│                                                        │       ".": {}               │       ".": {}               │
+│                                                        │     }                       │     }                       │
+│                                                        │   }                         │   }                         │
+│                                                        │ }                           │ }                           │
+├────────────────────────────────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
+│ transformation:avocado_operations→shaper:sales_results │ {                           │ {                           │
+│                                                        │   ".": {}                   │   ".": {}                   │
+│                                                        │ }                           │ }                           │
+└────────────────────────────────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
 ```
 
-As our pipeline is now built we will run it and produce data from the ran transformation.
+Now that all our nodes are linked we will be able to execute the transformation pipeline and share it
+to other people !
