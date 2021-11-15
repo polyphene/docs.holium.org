@@ -21,10 +21,10 @@ Let's create our first connexions, one to send avocado sales data to our **trans
 send year choice to the **transformation**:
 
 ```shell
-$ holium connection create --tail-type source --tail-name avocado_sales --tail-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' 
+$ holium connection create --tail-type source --tail-name avocado_sales --tail-selector '{"i": {"i": 0, ">": {".": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{"i": {"i": 0, ">": {".": {}}}}' 
 new object created: source:avocado_sales→transformation:avocado_operations
 
-$ holium connection create --tail-type source --tail-name selected_year --tail-selector '{\"i\": {\"i\": 0, \">\": {\".\": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{\"i\": {\"i\": 1, \">\": {\".\": {}}}}' 
+$ holium connection create --tail-type source --tail-name selected_year --tail-selector '{"i": {"i": 0, ">": {".": {}}}}' --head-type transformation --head-name avocado_operations --head-selector '{"i": {"i": 1, ">": {".": {}}}}' 
 new object created: source:selected_year→transformation:avocado_operations
 ```
 
@@ -59,7 +59,7 @@ $ holium connection list
 Finally, we will create the last **connection** linking our **transformation** and our **shaper**:
 
 ```shell
-$ holium connection create --tail-type transformation --tail-name avocado_operations --tail-selector '{\".\": {}}' --head-type shaper --head-name sales_results --head-selector '{\".\": {}}'
+$ holium connection create --tail-type transformation --tail-name avocado_operations --tail-selector '{".": {}}' --head-type shaper --head-name sales_results --head-selector '{".": {}}'
 new object created: transformation:avocado_operations→shaper:sales_results
 
 $ holium connection list
