@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Setting up
 
-In this tutorial, we will go through the creation of an Holium project that is tested, documented, 
+In this tutorial, we will go through the creation of a Holium project that is tested, documented, 
 and deployed — you can check out the generated project from the tutorial [here](https://github.com/polyphene/getting-started).
 
 This tutorial is geared towards first-time users who want detailed instructions on how to go from scratch to
