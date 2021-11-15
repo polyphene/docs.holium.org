@@ -15,8 +15,9 @@ The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They repre
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
 pipeline to get numbers of avocado type sales for on a given year.
 
-To be able to follow this tutorial you will first need to install Rust on your machine. They have various
-ways of installing it on your machine.
+To be able to follow this tutorial you will first need to install Rust on your machine.
+Newcomers to the Rust toolchain may find [instructions](https://www.rust-lang.org/tools/install) for its 
+installation through a one-line script.
 
 Once Rust is installed we will be able to leverage [`cargo`](https://doc.rust-lang.org/cargo/) to 
 install the Holium CLI. Execute the command:
