@@ -21,13 +21,13 @@ ways of installing it on your machine.
 Once Rust is installed we will be able to leverage [`cargo`](https://doc.rust-lang.org/cargo/) to 
 install the Holium CLI. Execute the command:
 ```shell
-$ cargo install holium-cli
+$ cargo install holium
 
     Updating crates.io index
-  Downloaded holium-cli v1.0.0
+  Downloaded holium v1.0.0
               ...
   Installing
-   Installed package `holium-cli v1.0.0`
+   Installed package `holium v1.0.0`
 ```
 
 Then to proceed in the tutorial we will have the need of two version control tools. 
