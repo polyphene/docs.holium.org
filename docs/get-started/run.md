@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Run the transformation pipeline'
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Run the transformation pipeline

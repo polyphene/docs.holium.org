@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Version the pipeline DAG'
-sidebar_position: 7
+sidebar_position: 8
 ---
 # Version the transformation pipeline DAG
 
