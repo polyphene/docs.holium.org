@@ -63,5 +63,5 @@ $ holium source list
 └───────────────┴──────────────────────────────┘
 ```
 
-Now that we have all necessary **data sources** for our project we will create a Holium **transformation*
+Now that we have all necessary **data sources** for our project we will create a Holium **transformation**
 that will allow us to transform our data.
