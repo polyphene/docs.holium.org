@@ -20,11 +20,11 @@ To create a new **portation** the `holium portation create` sub-command can be u
 the created **portations** by using the sub-command `holium portation list` :
 ```shell
 $ holium portation create --direction toHolium --node-type source --node-name avocado_sales \
---file-path avocado.json  --file-format json
+--file-path ./assets/sources/avocado.json  --file-format json
 new object created: to:source:avocado_sales
 
 $ holium portation create --direction toHolium --node-type source --node-name selected_year \
---file-path selected_year.json  --file-format json
+--file-path ./assets/sources/selected_year.json  --file-format json
 new object created: to:source:selected_year
 
 $ holium portation create --direction fromHolium --node-type shaper --node-name sales_results \

@@ -15,7 +15,8 @@ more information on how it works please refer to the [dedicated reference](../re
 
 As we want to keep our DAG simple we will only add a single **transformation** in our pipeline DAG.
 
-The **module** code that we are using can be found in the [tutorial repository](https://github.com/polyphene/getting-started/tree/main/module/avocado_operations).
+The **module** code that we are using can be found in the `./module/avocado_operations` folder of the
+_Getting started_ repostiory.
 
 To build the module we use native `cargo build` sub-command:
 ```shell
@@ -23,17 +24,18 @@ $ cargo build --target wasm32-unknown-unknown --release
 ```
 
 Following the build the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
+If you do not wish to build the wasm file yourself it can be found in `./assets/wasm/avocado_operations.wasm`.
 
 To create a **transformation** we can use the `holium transformation create` sub-command:
 
 ```shell
-$ holium transformation create avocado_operations --bytecode avocado_operations.wasm --handle get_sales_by_year\
- --json-schema-in '{"type": "array","prefixItems": [{"type": "array","items": {"type": "object","properties": \
- {"plu_4046": {"type": "number"},"plu_4225": {"type": "number"},"plu_4770": {"type": "number"},"date": \
- {"type": "string"},"average_price": {"type": "number"},"total_volume": {"type": "number"},"total_bags": \
- {"type": "number"},"small_bags": {"type": "number"},"large_bags": {"type": "number"},"xlarge_bags": \
- {"type": "number"},"avocado_type": {"type": "string"},"year": {"type": "number"},"geography": \
- {"type": "string"}}}}, {"type": "number"}]}' \
+$ holium transformation create avocado_operations --bytecode ./assets/wasm/avocado_operations.wasm \
+--handle get_sales_by_year --json-schema-in '{"type": "array","prefixItems": [{"type": "array",\
+"items": {"type": "object","properties": {"plu_4046": {"type": "number"},"plu_4225": {"type": "number"},\
+"plu_4770": {"type": "number"},"date": {"type": "string"},"average_price": {"type": "number"},\
+"total_volume": {"type": "number"},"total_bags": {"type": "number"},"small_bags": {"type": "number"},\
+"large_bags": {"type": "number"},"xlarge_bags": {"type": "number"},"avocado_type": {"type": "string"},\
+"year": {"type": "number"},"geography": {"type": "string"}}}}, {"type": "number"}]}' \
  --json-schema-out '{"type":"array", "prefixItems":[{"type":"array", "items": {"type":"array", \
  "prefixItems": [{"type": "string"}, {"type": "number"}]}}]}'
 new object created: avocado_operation
