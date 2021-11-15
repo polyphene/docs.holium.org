@@ -30,7 +30,6 @@ $ holium transformation create avocado_operations --bytecode avocado_operations.
  {"type": "string"}}}}, {"type": "number"}]}' \
  --json-schema-out '{"type":"array", "prefixItems":[{"type":"array", "items": {"type":"array", \
  "prefixItems": [{"type": "string"}, {"type": "number"}]}}]}'
- 
 new object created: avocado_operation
 ```
 
@@ -40,11 +39,10 @@ sub-command:
 
 ```shell
 $ holium transformation list
-
 ┌────────────────────┬───────────────────┬─────────────────┬──────────────────────────────┬──────────────────────────────┐
 │ NAME               │ HANDLE            │ BYTECODE (size) │ IN (JSON Schema)             │ OUT (JSON Schema)            │
 ├────────────────────┼───────────────────┼─────────────────┼──────────────────────────────┼──────────────────────────────┤
-│ avocado_operations │ get_sales_by_year │ 2.12 MB         │ {                            │ {                            │
+│ avocado_operations │ get_sales_by_year │ 2.09 MB         │ {                            │ {                            │
 │                    │                   │                 │   "type": "array",           │   "type": "array",           │
 │                    │                   │                 │   "prefixItems": [           │   "prefixItems": [           │
 │                    │                   │                 │     {                        │     {                        │
@@ -61,7 +59,6 @@ $ holium transformation list
 │                    │                   │                 │                              │         ]                    │
 │                    │                   │                 │                              │    ...                       │
 └────────────────────┴───────────────────┴─────────────────┴──────────────────────────────┴──────────────────────────────┘
-
 ```
 
 Currently, we have two types of objects in our project, **data sources** and **modules**. Before building our

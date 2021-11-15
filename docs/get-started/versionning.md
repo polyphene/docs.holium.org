@@ -15,7 +15,6 @@ from this **local context** to an **interplanetary context** (our `.holium` fold
 To do so we have dedicated subcommand, `holium project export`:
 ```shell
 $ holium project export
-
 project exported with pipeline cid: bafyr4ifri76sjsvnizy7obgmjbu5ut5rt5iw3rzwtq74hzrexbr5ktibee
 ```
 

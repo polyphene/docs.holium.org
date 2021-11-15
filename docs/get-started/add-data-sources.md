@@ -23,11 +23,9 @@ $ holium source create avocado_sales  --json-schema '{"type": "array","prefixIte
  {"type": "number"},"total_bags": {"type": "number"},"small_bags": {"type": "number"},"large_bags": \
  {"type": "number"},"xlarge_bags": {"type": "number"},"avocado_type": {"type": "string"},"year": \
  {"type": "number"},"geography": {"type": "string"}}}}]}'
- 
 new object created: avocado_sales
 
 $ holium source create selected_year --json-schema '{"type": "array", "prefixItems": [{"type": "number"}]}'
-
 new object created: selected_year
 ```
 
@@ -39,33 +37,31 @@ Once it is done we are able to list all of our **data sources** with the sub-com
 
 ```shell
 $ holium source list
-
-┌───────────────┬──────────────────────────────┐
-│ NAME          │ JSON Schema                  │
-├───────────────┼──────────────────────────────┤
-│ avocado_sales │ {                            │
+┌───────────────┬──────────────────────────────┐                                                                                
+│ NAME          │ JSON Schema                  │                                                                                     
+├───────────────┼──────────────────────────────┤                                                                          
+│ avocado_sales │ {                            │                                                                       
+│               │   "type": "array",           │                      
 │               │   "prefixItems": [           │
 │               │     {                        │
+│               │       "type": "array",       │
 │               │       "items": {             │
+│               │         "type": "object",    │
 │               │         "properties": {      │
-│               │           "4046": {          │
+│               │           "plu_4046": {      │
 │               │             "type": "number" │
 │               │           },                 │
-│               │           "4225": {          │
+│               │           "plu_4225": {      │
 │               │             "type": "number" │
-│               │           },                 │
-│               │           "4770": {          │
-│               │             "type": "number" │
-│               │           },                 │
-│               │   ...                        │
+│               │  ...                         │
 ├───────────────┼──────────────────────────────┤
 │ selected_year │ {                            │
+│               │   "type": "array",           │
 │               │   "prefixItems": [           │
 │               │     {                        │
 │               │       "type": "number"       │
 │               │     }                        │
-│               │   ],                         │
-│               │   "type": "array"            │
+│               │   ]                          │
 │               │ }                            │
 └───────────────┴──────────────────────────────┘
 ```
