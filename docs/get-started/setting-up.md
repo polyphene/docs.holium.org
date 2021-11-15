@@ -24,7 +24,7 @@ install the Holium CLI. Execute the command:
 $ cargo install holium
 ```
 
-To check that it properly installed run:
+Check the version to verify installation:
 ```shell
 $ holium -V
 Holium 1.0.0
@@ -39,6 +39,17 @@ Finally we will install [DVC](https://dvc.org/) to handle versions on the data t
 and export from the Holium Framework. Their [installation page](https://dvc.org/doc/install) contains all necessary steps to access
 their CLI.
 
+## Embedded help
 
-_Note: For this tutorial we will use the [Holium Rust SDK](https://github.com/polyphene/holium-rs-sdk) to 
-compile needed Holium modules._
+For all commands and subcommands of the CLI, the `-h` argument will provide
+detailed help information about their usage.
+
+Tab-completion scripts are also available for multiple shells (_bash_, _powershell_, _zsh_,…)
+and can be printed with the command `generate-shell-completions` or its alias `gsc`.
+Just evaluate the script for your favorite shell as follows:
+
+```shell
+eval "$(holium gsc bash)"
+```
+
+At this point, everything is in place to start operating the protocol.
