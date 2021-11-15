@@ -96,5 +96,5 @@ $ holium connection list
 └────────────────────────────────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
 ```
 
-Now that all our nodes are linked we will be able to execute the transformation pipeline and share it
-to other people !
+Now that we have connected all of our nodes we will check that the transformation pipeline DAG is valid,
+export it to the **interplanetary area** to version it and finally execute it !

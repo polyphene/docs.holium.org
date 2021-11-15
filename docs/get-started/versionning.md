@@ -1,10 +1,20 @@
 ---
 sidebar_label: 'Version the pipeline DAG'
-sidebar_position: 8
+sidebar_position: 7
 ---
 # Version the transformation pipeline DAG
 
-After building a working transformation pipeline DAG we might want to version it and share it with
+In the previous steps of this tutorial we spent some time to create necessary components and connect
+them all together to form our pipeline DAG. The first step before getting to a proper running pipeline
+is to make sure that the DAG we created id valid.
+
+To do so the sub-command `holium project export --no-write` is available:
+```shell
+$ holium project export --no-write
+current local project holds a healthy transformation pipeline
+```
+
+After building a healthy transformation pipeline DAG we might want to version it and share it with
 different collaborators. As previously seen when initializing our project we generated a `.holium`
 folder at the root of our project. This is the folder we will add to our version control system tool.
 
@@ -27,4 +37,5 @@ When the repository is cloned on another machine it can be imported to local con
 $ holium project import
 ```
 
-That is all for this tutorial ! If you have any more questions feel free to reach us on our social media.
+For the last step of our tutorial we will execute our transformation pipeline DAG over some real world
+data !

@@ -1,23 +1,13 @@
 ---
 sidebar_label: 'Run the transformation pipeline'
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Run the transformation pipeline
 
-In the previous steps of this tutorial we spent some time to create necessary components and connect
-them all together to form our pipeline DAG. The first step before getting to a proper running pipeline
-is to make sure that the DAG we created id valid.
+Now that we know that our pipeline DAG is sane and we versioned it we will focus on the execution.
 
-To do so the sub-command `holium project export --no-write` is available:
-```shell
-$ holium project export --no-write
-current local project holds a healthy transformation pipelin
-```
-
-Now that we know that our pipeline DAG is sane we will focus on the execution.
-
-The only thing left to do before running our transformation pipeline is to define **portations** to
+The only thing left to do before executing our transformation pipeline is to define **portations** to
 import data to Holium and export data from Holium. In our case we will apply two import **portations**
 to our sources and one export **portation** to our shaper.
 
@@ -60,5 +50,7 @@ Now if we open our `sales_results.json` file we can find the generated json obje
 ```
 
 With that we have created a valid pipeline that can run to produce data based on our connections and 
-transformations. Before ending the tutorial we have one subject left to cover, the versioning of
-our pipelines.
+transformations. 
+
+This is the end of the base tutorial ! If you have any more questions please feel free to reach us on
+our social media.
