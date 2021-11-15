@@ -16,7 +16,13 @@ more information on how it works please refer to the [dedicated reference](../re
 As we want to keep our DAG simple we will only add a single **transformation** in our pipeline DAG.
 
 The **module** code that we are using can be found in the [tutorial repository](https://github.com/polyphene/getting-started/tree/main/module/avocado_operations).
-A dedicated folder is also provided with [compiled assets](https://github.com/polyphene/getting-started/tree/main/assets/wasm).
+
+To build the module we use native `cargo build` sub-command:
+```shell
+$ cargo build --target wasm32-unknown-unknown --release
+```
+
+Following the build the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
 
 To create a **transformation** we can use the `holium transformation create` sub-command:
 
