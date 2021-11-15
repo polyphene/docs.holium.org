@@ -31,7 +31,7 @@ $ cargo install holium-cli
    Installed package `holium-cli v1.0.0-alpha`
 ```
 
-Then to proceed in the tutorial we will have the need of two version control tools. 
+Then to proceed in the tutorial we will need two version control tools. 
 
 The first one is [Git](https://git-scm.com/). It will prove useful to version our Holium project and the different pipeline
 we build in it. You can find about installation procedure on [their dedicated page](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git).
