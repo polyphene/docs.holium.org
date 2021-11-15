@@ -9,7 +9,7 @@ different collaborators. As previously seen when initializing our project we gen
 folder at the root of our project. This is the folder we will add to our version control system tool.
 
 At the current state of the tutorial we have only been interacting with a **local context** to store 
-the different information about our transformation pipeline DAG. We now aim to mode the relevent data
+the different information about our transformation pipeline DAG. We now aim to mode the relevant data
 from this **local context** to an **interplanetary context** (our `.holium` folder) as to version/share it.
 
 To do so we have dedicated subcommand, `holium project export`:
