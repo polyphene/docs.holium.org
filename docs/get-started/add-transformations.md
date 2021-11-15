@@ -21,7 +21,16 @@ A dedicated folder is also provided with [compiled assets](https://github.com/po
 To create a **transformation** we can use the `holium transformation create` sub-command:
 
 ```shell
-$ holium transformation create avocado_operations --bytecode avocado_operations.wasm --handle get_sales_by_year --json-schema-in '{\"type\": \"array\",\"prefixItems\": [{\"type\": \"array\",\"items\": {\"type\": \"object\",\"properties\": {\"plu_4046\": {\"type\": \"number\"},\"plu_4225\": {\"type\": \"number\"},\"plu_4770\": {\"type\": \"number\"},\"date\": {\"type\": \"string\"},\"average_price\": {\"type\": \"number\"},\"total_volume\": {\"type\": \"number\"},\"total_bags\": {\"type\": \"number\"},\"small_bags\": {\"type\": \"number\"},\"large_bags\": {\"type\": \"number\"},\"xlarge_bags\": {\"type\": \"number\"},\"avocado_type\": {\"type\": \"string\"},\"year\": {\"type\": \"number\"},\"geography\": {\"type\": \"string\"}}}}, {\"type\": \"number\"}]}' --json-schema-out '{\"type\":\"array\", \"prefixItems\":[{\"type\":\"array\", \"items\": {\"type\":\"array\", \"prefixItems\": [{\"type\": \"string\"}, {\"type\": \"number\"}]}}]}'
+$ holium transformation create avocado_operations --bytecode avocado_operations.wasm --handle get_sales_by_year\
+ --json-schema-in '{"type": "array","prefixItems": [{"type": "array","items": {"type": "object","properties": \
+ {"plu_4046": {"type": "number"},"plu_4225": {"type": "number"},"plu_4770": {"type": "number"},"date": \
+ {"type": "string"},"average_price": {"type": "number"},"total_volume": {"type": "number"},"total_bags": \
+ {"type": "number"},"small_bags": {"type": "number"},"large_bags": {"type": "number"},"xlarge_bags": \
+ {"type": "number"},"avocado_type": {"type": "string"},"year": {"type": "number"},"geography": \
+ {"type": "string"}}}}, {"type": "number"}]}' \
+ --json-schema-out '{"type":"array", "prefixItems":[{"type":"array", "items": {"type":"array", \
+ "prefixItems": [{"type": "string"}, {"type": "number"}]}}]}'
+ 
 new object created: avocado_operation
 ```
 
@@ -31,6 +40,7 @@ sub-command:
 
 ```shell
 $ holium transformation list
+
 ┌────────────────────┬───────────────────┬─────────────────┬──────────────────────────────┬──────────────────────────────┐
 │ NAME               │ HANDLE            │ BYTECODE (size) │ IN (JSON Schema)             │ OUT (JSON Schema)            │
 ├────────────────────┼───────────────────┼─────────────────┼──────────────────────────────┼──────────────────────────────┤

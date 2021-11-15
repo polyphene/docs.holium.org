@@ -14,7 +14,9 @@ We will connect it to our **transformation** in the future.
 To create a new **shaper** to our project we can use the sub-command `holium shaper create`:
 
 ```shell
-$ holium shaper create sales_results --json-schema '{"type":"array", "prefixItems":[{"type":"array", "items": {"type":"array", "prefixItems": [{"type": "string"}, {"type": "number"}]}}]}'
+$ holium shaper create sales_results --json-schema '{"type":"array", "prefixItems":[{"type":"array",\
+ "items": {"type":"array", "prefixItems": [{"type": "string"}, {"type": "number"}]}}]}'
+ 
 new object created: sales_results
 ```
 
@@ -22,6 +24,7 @@ Once it is done we are able to list all of our **shapers** with the sub-command 
 
 ```shell
 $ holium shaper list
+
 ┌───────────────┬──────────────────────────────┐                  
 │ NAME          │ JSON Schema                  │
 ├───────────────┼──────────────────────────────┤

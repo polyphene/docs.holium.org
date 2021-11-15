@@ -27,6 +27,7 @@ $ cargo install holium
 To check that it properly installed run:
 ```shell
 $ holium -V
+
 Holium 1.0.0
 ```
 
