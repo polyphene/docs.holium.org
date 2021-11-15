@@ -18,7 +18,7 @@ $ holium project export
 project exported with pipeline cid: bafyr4ifri76sjsvnizy7obgmjbu5ut5rt5iw3rzwtq74hzrexbr5ktibee
 ```
 
-Now all relevent data for our transformation pipeline DAG have been exported in the `.holium/interplanetary`.
+Now all relevant data for our transformation pipeline DAG have been exported in the `.holium/interplanetary`.
 By adding the folder to our VCS it can then be pushed on a remote repository for anyone to clone.
 
 When the repository is cloned on another machine it can be imported to local context by using the
