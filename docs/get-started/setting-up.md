@@ -13,7 +13,7 @@ a working Holium project. As we aim to get use to all facets of the Holium CLI w
 
 The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represent numbers on
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
-pipeline to get numbers of avocado type sales based on a given year.
+pipeline to get numbers of avocado type sales for on a given year.
 
 To be able to follow this tutorial you will first need to install Rust on your machine. They have various
 ways of installing it on your machine.
