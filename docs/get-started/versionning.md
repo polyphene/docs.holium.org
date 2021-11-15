@@ -9,7 +9,7 @@ different collaborators. As previously seen when initializing our project we gen
 folder at the root of our project. This is the folder we will add to our version control system tool.
 
 At the current state of the tutorial we have only been interacting with a **local context** to store 
-the different information about our transformation pipeline DAG. We now aim to mode the relevent data
+the different information about our transformation pipeline DAG. We now aim to mode the relevant data
 from this **local context** to an **interplanetary context** (our `.holium` folder) as to version/share it.
 
 To do so we have dedicated subcommand, `holium project export`:
@@ -18,14 +18,13 @@ $ holium project export
 project exported with pipeline cid: bafyr4ifri76sjsvnizy7obgmjbu5ut5rt5iw3rzwtq74hzrexbr5ktibee
 ```
 
-Now all relevent data for our transformation pipeline DAG have been exported in the `.holium/interplanetary`.
+Now all relevant data for our transformation pipeline DAG have been exported in the `.holium/interplanetary`.
 By adding the folder to our VCS it can then be pushed on a remote repository for anyone to clone.
 
 When the repository is cloned on another machine it can be imported to local context by using the
 `holium project import` sub-command:
 ```shell
 $ holium project import
-
 ```
 
-That is all for this tutorial ! If you have anymore questions feel free to reach us on our social media.
+That is all for this tutorial ! If you have any more questions feel free to reach us on our social media.
