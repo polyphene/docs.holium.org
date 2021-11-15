@@ -37,7 +37,7 @@ $ holium source list
 │ NAME          │ JSON Schema                  │
 ├───────────────┼──────────────────────────────┤
 │ avocado_sales │ {                            │
-│               │   \"prefixItems": [           │
+│               │   "prefixItems": [           │
 │               │     {                        │
 │               │       "items": {             │
 │               │         "properties": {      │

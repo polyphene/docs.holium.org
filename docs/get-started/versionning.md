@@ -2,6 +2,7 @@
 sidebar_label: 'Version the pipeline DAG'
 sidebar_position: 7
 ---
+# Version the transformation pipeline DAG
 
 After building a working transformation pipeline DAG we might want to version it and share it with
 different collaborators. As previously seen when initializing our project we generated a `.holium`
