@@ -11,7 +11,7 @@ and deployed — you can check out the generated project from the tutorial [here
 This tutorial is geared towards first-time users who want detailed instructions on how to go from scratch to
 a working Holium project. As we aim to get use to all facets of the Holium CLI we choose a simple use case.
 
-The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represents numbers on
+The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represent numbers on
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
 pipeline to get numbers of avocado type sales based on a given year.
 
