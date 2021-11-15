@@ -34,7 +34,7 @@ $ cargo install holium-cli
 Then to proceed in the tutorial we will need two version control tools. 
 
 The first one is [Git](https://git-scm.com/). It will prove useful to version our Holium project and the different pipeline
-we build in it. You can find about installation procedure on [their dedicated page](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git).
+we build in it. You can find about installation procedure [here](https://git-scm.com).
 
 Finally we will install [DVC](https://dvc.org/) to handle versions on the data that we will import to
 and export from the Holium Framework. Their [installation page](https://dvc.org/doc/install) contains all necessary steps to access
