@@ -27,4 +27,4 @@ When the repository is cloned on another machine it can be imported to local con
 $ holium project import
 ```
 
-That is all for this tutorial ! If you have anymore questions feel free to reach us on our social media.
+That is all for this tutorial ! If you have any more questions feel free to reach us on our social media.
