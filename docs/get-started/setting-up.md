@@ -24,10 +24,10 @@ install the Holium CLI. Execute the command:
 $ cargo install holium-cli
 
     Updating crates.io index
-  Downloaded holium-cli v1.0.0-alpha
+  Downloaded holium-cli v1.0.0
               ...
   Installing
-   Installed package `holium-cli v1.0.0-alpha`
+   Installed package `holium-cli v1.0.0`
 ```
 
 Then to proceed in the tutorial we will have the need of two version control tools. 
