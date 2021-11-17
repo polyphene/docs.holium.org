@@ -63,7 +63,7 @@ A selector is an expression, often represented as a JSON literal, describing tra
 and selecting a subset of nodes by *marking* them during the walk.
 
 In Holium, selectors allow shaping data between transformations (nodes) of a pipeline (dag).
-In that purpose, any connexion (edge) holds a tail selector informing the parts of data from the parent node to handle,
+In that purpose, any connection (edge) holds a tail selector informing the parts of data from the parent node to handle,
 and a head selector matching its cardinality and describing how to shape it into parts of the input parameter of the
 child node.
 
