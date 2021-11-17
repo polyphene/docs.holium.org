@@ -5,15 +5,26 @@ sidebar_position: 1
 
 # Setting up
 
-In this tutorial, we will go through the creation of a Holium project that is tested, documented, 
-and deployed — you can check out the generated project from the tutorial [here](https://github.com/polyphene/getting-started).
+In this tutorial, we will go through the creation of a Holium project that is tested, documented and deployed.
+
+## Tutorial repository
 
 This tutorial is geared towards first-time users who want detailed instructions on how to go from scratch to
 a working Holium project. As we aim to get used to all facets of the Holium CLI we choose a simple use case.
 
+The sources are available on [GitHub](https://github.com/polyphene/getting-started) and you may get started
+by cloning it:
+
+```shell
+$ git clone https://github.com/polyphene/getting-started.git
+$ cd getting-started
+```
+
 The tutorial data are sourced from [Kaggle](https://www.kaggle.com/neuromusic/avocado-prices). They represent figures on
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
 pipeline to get numbers of avocado type sales for a given year.
+
+## Install
 
 To be able to follow this tutorial you will first need to install Rust on your machine.
 Newcomers to the Rust toolchain may find [instructions](https://www.rust-lang.org/tools/install) for its 

@@ -5,15 +5,8 @@ sidebar_position: 2
 
 # Create a project
 
-To ease the tutorial we will start from an already prepared directory [Getting started](https://github.com/polyphene/getting-started).
-
-Let's clone it:
-```shell
-$ git clone https://github.com/polyphene/getting-started.git
-$ cd getting-started
-```
-
-Then, we need to initialize a new Holium project on our file system with the dedicated command in the CLI.
+The first thing to do once in the `getting-started` directory is to initialize
+a new Holium project on our file system with the dedicated command in the CLI.
 
 ```shell
 $ holium init --no-dvc
