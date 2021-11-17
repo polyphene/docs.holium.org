@@ -18,7 +18,12 @@ As we want to keep our pipeline simple we will only add a single **transformatio
 The **module** code that we are using can be found in the `./module/avocado_operations` folder of the
 _Getting started_ repostiory.
 
-To build the module we use native `cargo build` sub-command:
+To build the module we first need the target to be installed:
+```shell
+$ rustup target add wasm32-unknown-unknown
+```
+
+We may then use native `cargo build` sub-command:
 ```shell
 $ cd module/avocado_operation
 $ cargo build --target wasm32-unknown-unknown --release
