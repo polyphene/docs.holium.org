@@ -29,7 +29,8 @@ project exported with pipeline cid: bafyr4ifri76sjsvnizy7obgmjbu5ut5rt5iw3rzwtq7
 ```
 
 Now all relevant data for our transformation pipeline have been exported in the `.holium/interplanetary` directory.
-By adding the folder to our VCS it can then be pushed on a remote repository for anyone to clone.
+By adding the folder to our VCS it can then be pushed on a remote repository for anyone to clone,
+or even pushed to IPFS.
 
 When the repository is cloned on another machine, it may be imported to local context by using the
 `holium project import` sub-command:
