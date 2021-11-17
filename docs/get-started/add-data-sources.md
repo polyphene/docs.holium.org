@@ -7,12 +7,12 @@ sidebar_position: 3
 
 To start of our pipeline we will first add two **data sources**.
 
-**Data sources** are nodes that are usually uniquely connected as tail nodes, meaning that they do
-not receive data inputs but will output data to node connected to them. Developers can define the structure
+**Data sources** are nodes usually uniquely connected as tail nodes, meaning that they
+receive data but never output data to any node. Developers can define the structure
 of input data when creating the source node.
 
-We will create two data sources for our tutorial project. One for our avocado sales details and one that
-will serve as a parameter to select the year want to conduct our price inspection on. 
+We will create two data sources for our project. One for our details on avocado sales and one that
+will serve as a parameter to select the year we want to conduct our price inspection on. 
 
 To create a **data source** we can use the `holium source create` sub-command:
 
@@ -66,5 +66,5 @@ $ holium source list
 └───────────────┴──────────────────────────────┘
 ```
 
-Now that we have all necessary **data sources** for our project we will create a Holium **transformation**
+Now that we have all necessary **data sources** for our project, we will create a Holium **transformation**
 that will allow us to transform our data.

@@ -5,13 +5,13 @@ sidebar_position: 5
 
 # Add shaper
 
-**Shapers** are nodes that are usually uniquely connected as head nodes, meaning that they receive 
+**Shapers** are nodes usually uniquely connected as head nodes, meaning that they receive 
 data inputs but will output no data to another node. Developers can define the structure of output 
 data when creating the source node.
 
-We will connect it to our **transformation** in the future.
+We will connect it to our **transformation** afterwards.
 
-To create a new **shaper** to our project we can use the sub-command `holium shaper create`:
+To create a new **shaper** to our project we may use the sub-command `holium shaper create`:
 
 ```shell
 $ holium shaper create sales_results --json-schema '{"type":"array", "prefixItems":[{"type":"array",\
@@ -45,7 +45,7 @@ $ holium shaper list
 └───────────────┴──────────────────────────────┘
 ```
 
-With this last object created we have all objects necessary for us to build our pipeline. To finalize the 
+With this last object created, we have all objects necessary for us to build our pipeline. To finalize the 
 pipeline build the final step is to connect all previously elements together.
 
 

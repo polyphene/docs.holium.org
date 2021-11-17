@@ -5,28 +5,29 @@ sidebar_position: 4
 
 # Add modules
 
-Following the importation of data sources we will now add the next elements in line: Holium **transformations**.
+Following the creation of data sources, we will now add the next elements in line: Holium **transformations**.
 
-Holium **transformations** are contained in **modules**, they can be considered as functions. Holium
-**modules** are compiled Wasm bytecodes that follows the [SDK specifications](../reference/sdk/specifications.md).
+Holium **transformations** are contained in **modules** and can be considered as functions. Holium
+**modules** are compiled Wasm bytecodes that follow the [SDK specifications](../reference/sdk/specifications.md).
 
-In this tutorial we will be using **modules** compiled from Rust code that integrates the Rust SDK. For 
+In this tutorial we will be using **modules** compiled from Rust code that makes use of the Rust SDK. For 
 more information on how it works please refer to the [dedicated reference](../reference/sdk/rust-sdk/usage.md).
 
-As we want to keep our DAG simple we will only add a single **transformation** in our pipeline DAG.
+As we want to keep our pipeline simple we will only add a single **transformation** in our pipeline DAG.
 
 The **module** code that we are using can be found in the `./module/avocado_operations` folder of the
 _Getting started_ repostiory.
 
 To build the module we use native `cargo build` sub-command:
 ```shell
+$ cd module/avocado_operation
 $ cargo build --target wasm32-unknown-unknown --release
 ```
 
-Following the build the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
+Following the build, the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
 If you do not wish to build the wasm file yourself it can be found in `./assets/wasm/avocado_operations.wasm`.
 
-To create a **transformation** we can use the `holium transformation create` sub-command:
+To create a **transformation** we may then use the `holium transformation create` sub-command:
 
 ```shell
 $ holium transformation create avocado_operations --bytecode ./assets/wasm/avocado_operations.wasm \
@@ -70,5 +71,5 @@ $ holium transformation list
 ```
 
 Currently, we have two types of objects in our project, **data sources** and **modules**. Before building our
-pipeline we will need add one last element: a shaper.
+pipeline we will need to add one last element: a **shaper**.
 

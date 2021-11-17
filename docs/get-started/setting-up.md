@@ -9,11 +9,11 @@ In this tutorial, we will go through the creation of a Holium project that is te
 and deployed — you can check out the generated project from the tutorial [here](https://github.com/polyphene/getting-started).
 
 This tutorial is geared towards first-time users who want detailed instructions on how to go from scratch to
-a working Holium project. As we aim to get use to all facets of the Holium CLI we choose a simple use case.
+a working Holium project. As we aim to get used to all facets of the Holium CLI we choose a simple use case.
 
-The tutorial data are sourced from [Kaggle](https://www.kaggle.com/). They represent numbers on
+The tutorial data are sourced from [Kaggle](https://www.kaggle.com/neuromusic/avocado-prices). They represent figures on
 avocado sales in the United States. The goal of our transformation pipeline is to create a data
-pipeline to get numbers of avocado type sales for on a given year.
+pipeline to get numbers of avocado type sales for a given year.
 
 To be able to follow this tutorial you will first need to install Rust on your machine.
 Newcomers to the Rust toolchain may find [instructions](https://www.rust-lang.org/tools/install) for its 
@@ -31,7 +31,7 @@ $ holium -V
 Holium 1.0.0
 ```
 
-You will also need [Git](https://git-scm.com/). It will prove useful to version our Holium project and the different pipeline
+You will also need [Git](https://git-scm.com/). It will prove useful to version our Holium project and the different pipelines
 we build in it. You can find about installation procedure [here](https://git-scm.com).
 
 ## Embedded help
