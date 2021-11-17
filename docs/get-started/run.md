@@ -19,16 +19,28 @@ file holds the year we want to conduct our operation on.
 To create a new **portation** the `holium portation create` sub-command can be used. We will also review
 the created **portations** by using the sub-command `holium portation list` :
 ```shell
-$ holium portation create --direction toHolium --node-type source --node-name avocado_sales \
---file-path ./assets/sources/avocado.json  --file-format json
+$ holium portation create \
+        --direction toHolium \
+        --node-type source \
+        --node-name avocado_sales \
+        --file-path ./assets/sources/avocado.json \
+        --file-format json
 new object created: to:source:avocado_sales
 
-$ holium portation create --direction toHolium --node-type source --node-name selected_year \
---file-path ./assets/sources/selected_year.json  --file-format json
+$ holium portation create \
+        --direction toHolium \
+        --node-type source \ 
+        --node-name selected_year \
+        --file-path ./assets/sources/selected_year.json \
+        --file-format json
 new object created: to:source:selected_year
 
-$ holium portation create --direction fromHolium --node-type shaper --node-name sales_results \
---file-path sales_results.json  --file-format json
+$ holium portation create \
+        --direction fromHolium \
+        --node-type shaper \
+        --node-name sales_results \
+        --file-path sales_results.json \
+        --file-format json
 new object created: from:shaper:sales_results
 ```
 
