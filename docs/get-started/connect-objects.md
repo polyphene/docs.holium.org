@@ -13,12 +13,12 @@ The **connections** model for Holium is based on [IPLD selectors](http://ipld.io
 Nonetheless, they are adapted in a subset to fit our specification. More to read in our [dedicated
 section](http://localhost:3000/reference/design#selectors-and-connections).
 
-We will start by connecting our **data sources** to the **transformation**. 
+We will start by connecting our data sources to the transformation. 
 
 To connect objects in our pipeline, the CLI has a dedicated sub-command `holium connection create`.
 
-Let's create our first connections, one to send avocado sales data to our **transformation** and one to
-send year choice to the **transformation**:
+Let's create our first connections, one to send avocado sales data to our transformation and one to
+send year choice to the transformation:
 
 ```shell
 $ holium connection create \
@@ -40,7 +40,7 @@ $ holium connection create \
 new object created: source:selected_year→transformation:avocado_operations
 ```
 
-Before moving forward to the connection between our **transformation** and our **shaper** let's print
+Before moving forward to the connection between our transformation and our shaper let's print
 the list of connections we just created. To do so, we can leverage the sub-command `holium connection list`:
 
 ```shell
@@ -68,7 +68,7 @@ $ holium connection list
 └────────────────────────────────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
 ```
 
-Finally, we will create the last **connection** linking our **transformation** to our **shaper**:
+Finally, we will create the last connection linking our transformation to our shaper:
 
 ```shell
 $ holium connection create \

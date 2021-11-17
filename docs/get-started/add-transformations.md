@@ -7,15 +7,15 @@ sidebar_position: 4
 
 Following the creation of data sources, we will now add the next elements in line: Holium **transformations**.
 
-Holium **transformations** are contained in **modules** and can be considered as functions. Holium
-**modules** are compiled Wasm bytecodes that follow the [SDK specifications](../reference/sdk/specifications.md).
+Holium transformations are contained in **modules** and can be considered as functions. Holium
+modules are compiled Wasm bytecodes that follow the [SDK specifications](../reference/sdk/specifications.md).
 
-In this tutorial we will be using **modules** compiled from Rust code that makes use of the Rust SDK. For 
+In this tutorial we will be using modules compiled from Rust code that makes use of the Rust SDK. For 
 more information on how it works please refer to the [dedicated reference](../reference/sdk/rust-sdk/usage.md).
 
-As we want to keep our pipeline simple we will only add a single **transformation** in our pipeline DAG.
+As we want to keep our pipeline simple we will only add a single transformation in our pipeline DAG.
 
-The **module** code that we are using can be found in the `./module/avocado_operations` folder of the
+The module code that we are using can be found in the `./module/avocado_operations` folder of the
 _Getting started_ repostiory.
 
 To build the module we first need the target to be installed:
@@ -32,7 +32,7 @@ $ cargo build --target wasm32-unknown-unknown --release
 Following the build, the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
 If you do not wish to build the wasm file yourself it can be found in `./assets/wasm/avocado_operations.wasm`.
 
-To create a **transformation** we may then use the `holium transformation create` sub-command:
+To create a transformation we may then use the `holium transformation create` sub-command:
 
 ```shell
 $ holium transformation create avocado_operations \
@@ -86,7 +86,7 @@ new object created: avocado_operation
 ```
 
 
-Once it is done we can list our available **transformation** by using the `holium transformation list`
+Once it is done we can list our available transformation by using the `holium transformation list`
 sub-command:
 
 ```shell

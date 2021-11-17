@@ -9,9 +9,9 @@ sidebar_position: 5
 data inputs but will output no data to another node. Developers can define the structure of output 
 data when creating the source node.
 
-We will connect it to our **transformation** afterwards.
+We will connect it to our transformation afterwards.
 
-To create a new **shaper** to our project we may use the sub-command `holium shaper create`:
+To create a new shaper to our project we may use the sub-command `holium shaper create`:
 
 ```shell
 $ holium shaper create sales_results --json-schema '
@@ -33,7 +33,7 @@ $ holium shaper create sales_results --json-schema '
 new object created: sales_results
 ```
 
-Once it is done we are able to list all of our **shapers** with the sub-command `holium shaper list`:
+Once it is done we are able to list all of our shapers with the sub-command `holium shaper list`:
 
 ```shell
 $ holium shaper list

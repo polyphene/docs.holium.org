@@ -20,7 +20,7 @@ folder at the root of our project. This is the folder we will add to our version
 
 At the current stage of the tutorial we have only been interacting with a **local context** to store 
 the information about our transformation pipeline. We now aim to move the relevant data
-from this **local context** to an **interplanetary context** (our `.holium` folder) as a way to version/share it.
+from this local context to an **interplanetary context** (our `.holium` folder) as a way to version/share it.
 
 To do so, we have dedicated subcommand, `holium project export`:
 ```shell

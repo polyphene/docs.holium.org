@@ -7,14 +7,14 @@ sidebar_position: 3
 
 To start of our pipeline we will first add two **data sources**.
 
-**Data sources** are nodes usually uniquely connected as tail nodes, meaning that they
+Data sources are nodes usually uniquely connected as tail nodes, meaning that they
 receive data but never output data to any node. Developers can define the structure
 of input data when creating the source node.
 
 We will create two data sources for our project. One for our details on avocado sales and one that
 will serve as a parameter to select the year we want to conduct our price inspection on. 
 
-To create a **data source** we can use the `holium source create` sub-command:
+To create a data source we can use the `holium source create` sub-command:
 
 ```shell
 $ holium source create avocado_sales  --json-schema '
@@ -51,10 +51,10 @@ new object created: selected_year
 ```
 
 
-Make sure to run the sub-command for all **data sources** available so that all assets are available in the
+Make sure to run the sub-command for all data sources available so that all assets are available in the
 Holium project.
 
-Once it is done we are able to list all of our **data sources** with the sub-command `holium source list`:
+Once it is done we are able to list all of our data sources with the sub-command `holium source list`:
 
 ```shell
 $ holium source list

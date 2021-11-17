@@ -8,16 +8,16 @@ sidebar_position: 8
 Now that we know that our pipeline is sane, we will focus on the execution.
 
 The only thing left to do before executing our transformation pipeline is to define **portations** to
-import data to Holium and export data from Holium. In our case we will apply two import **portations**
-to our sources and one export **portation** to our shaper.
+import data to Holium and export data from Holium. In our case we will apply two import portations
+to our sources and one export portation to our shaper.
 
 The different files that we will use as our imported data can be found in `./assets/sources`.
 
 In the first file, `avocado.json`, we can find all retails sales details for avocado in the US. The second
 file holds the year we want to conduct our operation on.
 
-To create a new **portation** the `holium portation create` sub-command can be used. We will also review
-the created **portations** by using the sub-command `holium portation list` :
+To create a new portation the `holium portation create` sub-command can be used. We will also review
+the created portations by using the sub-command `holium portation list` :
 ```shell
 $ holium portation create \
         --direction toHolium \
