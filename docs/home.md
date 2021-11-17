@@ -13,7 +13,7 @@ With Holium, teams around the world collaborate on the transformation of all typ
 
 On this website, you will find:
 - An introduction of the [main concepts](about-holium/what-is-holium.md).
-- A [short guide](get-started/install.md) to help install and start using the protocol with its CLI.
+- A [short guide](get-started/setting-up.md) to help install and start using the protocol with its CLI.
 - The in-depth [design reference](reference/design.md).
 
 If you would like to know more, join our community on [Discord](https://discord.gg/A3t5ZFSbCG)!
