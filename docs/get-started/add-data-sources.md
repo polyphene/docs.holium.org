@@ -7,7 +7,7 @@ sidebar_position: 3
 
 To start of our pipeline we will first add two **data sources**.
 
-Data sources are nodes usually uniquely connected as head nodes, meaning that they
+Data sources are nodes usually uniquely connected as tail nodes, meaning that they
 output data but never receive data from any node. Developers can define the structure
 of data when creating the source node.
 
