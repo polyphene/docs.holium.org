@@ -36,7 +36,6 @@ To create a transformation we may then use the `holium transformation create` su
 
 ```shell
 $ cd ../..
-
 $ holium transformation create avocado_operations \
         --bytecode ./assets/wasm/avocado_operations.wasm \
         --handle get_sales_by_year \
