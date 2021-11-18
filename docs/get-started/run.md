@@ -29,7 +29,7 @@ new object created: to:source:avocado_sales
 
 $ holium portation create \
         --direction toHolium \
-        --node-type source \ 
+        --node-type source \
         --node-name selected_year \
         --file-path ./assets/sources/selected_year.json \
         --file-format json
