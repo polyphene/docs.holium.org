@@ -8,8 +8,8 @@ sidebar_position: 3
 To start of our pipeline we will first add two **data sources**.
 
 Data sources are nodes usually uniquely connected as tail nodes, meaning that they
-receive data but never output data to any node. Developers can define the structure
-of input data when creating the source node.
+output data but never receive data from any node. Developers can define the structure
+of data when creating the source node.
 
 We will create two data sources for our project. One for our details on avocado sales and one that
 will serve as a parameter to select the year we want to conduct our price inspection on. 

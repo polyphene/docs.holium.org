@@ -30,11 +30,12 @@ $ cargo build --target wasm32-unknown-unknown --release
 ```
 
 Following the build, the wasm bytecode can be found at `./module/avocado_operations/target/wasm32-unknown-unknown/release/avocado_operations.wasm`.
-If you do not wish to build the wasm file yourself it can be found in `./assets/wasm/avocado_operations.wasm`.
+
 
 To create a transformation we may then use the `holium transformation create` sub-command:
 
 ```shell
+$ cd ../..
 $ holium transformation create avocado_operations \
         --bytecode ./assets/wasm/avocado_operations.wasm \
         --handle get_sales_by_year \
