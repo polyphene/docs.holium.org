@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Holium documentation',
   tagline: 'Documentations for the Holium Framework',
-  url: 'https://docs.holium.org',
+  url: 'https://polyphene.github.io/docs.holium.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,7 +40,7 @@ module.exports = {
           items: [
             {
               label: 'Holium',
-              href: 'https://holium.org',
+              href: 'https://polyphene.github.io/holium.org/',
             },
             ]
         },
