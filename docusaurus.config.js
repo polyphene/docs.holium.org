@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Holium documentation',
   tagline: 'Documentations for the Holium Framework',
-  url: 'https://polyphene.github.io/docs.holium.org/',
-  baseUrl: '/',
+  url: 'https://polyphene.github.io',
+  baseUrl: '/docs.holium.org/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
