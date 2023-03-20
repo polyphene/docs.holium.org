@@ -10,7 +10,7 @@
 [![Discord](https://img.shields.io/discord/882061839347908678.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/A3t5ZFSbCG)
 [![license](https://badgen.net/github/license/polyphene/docs.holium.org)](https://raw.githubusercontent.com/polyphene/docs.holium.org/main/LICENSE)
 
-> This repository holds the sources of https://docs.holium.org ,
+> This repository holds the sources of https://polyphene.github.io/docs.holium.org/ ,
 > official documentation of the Holium protocol.
 
 ### 🔧 Development
